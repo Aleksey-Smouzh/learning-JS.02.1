@@ -274,6 +274,25 @@ document.querySelector(".b-14").onclick = f14;
 // Task     15
 // Дан select .s-151 и .s-152, каждый из которых содержит 1 и 0.  Дан select .s-153, который содержит две операции - && и || . Дана кнопка .b-15, при нажатии на которую срабатывает функция f15. Функция выводит в .out-15 результат логических операций выбранных в 3 select к числам выбранным в первом и втором select. Например выбрано 1 1 &&, нужно вывести результат операции 1&&1 т.е. 1 или 0.
 
-function f15() {}
+function f15() {
+  let s151 = document.querySelector(".s-151");
+  let s152 = document.querySelector(".s-152");
+  let s153 = document.querySelector(".s-153");
+  const b15 = document.querySelector(".b-15");
+  let out15 = document.querySelector(".out-15");
+  let a = +s151.value;
+  let b = +s152.value;
+  let c = s153.value;
+  b15.onclick = () => {
+    switch (c) {
+      case "&&":
+        out15.innerHTML = a && b;
+        break;
+      case "||":
+        out15.innerHTML = a || b;
+        break;
+    }
+  };
+}
 
 document.querySelector(".b-15").onclick = f15;
