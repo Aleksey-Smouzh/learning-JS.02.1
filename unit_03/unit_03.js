@@ -42,21 +42,19 @@ document.querySelector(".b-2").onclick = f2;
 // Проведите самостоятельный тест работы, введите пары чисел 4 и 9, 9 и 22, 5 и 111.
 
 function f3() {
-   let i31 = document.querySelector('.i-31');
-   let i32 = document.querySelector('.i-32');
-   const b3 = document.querySelector('.b-3');
-   let out3 = document.querySelector('.out-3');
-   let a = +i31.value;
-   let b = +i32.value;
-   b3.onclick = () =>{
-     if (a > b) {
-        out3.innerHTML = a;
-     } else {
-        out3.innerHTML = b;
-     }
-   
-   }
-
+  let i31 = document.querySelector(".i-31");
+  let i32 = document.querySelector(".i-32");
+  const b3 = document.querySelector(".b-3");
+  let out3 = document.querySelector(".out-3");
+  let a = +i31.value;
+  let b = +i32.value;
+  b3.onclick = () => {
+    if (a > b) {
+      out3.innerHTML = a;
+    } else {
+      out3.innerHTML = b;
+    }
+  };
 }
 
 document.querySelector(".b-3").onclick = f3;
@@ -64,7 +62,19 @@ document.querySelector(".b-3").onclick = f3;
 // Task 4.
 // Пользователь вводит в .i-4 год своего рождения. Есть кнопка .b-4 которая запускает функцию f4. Функция должна вывести в .out-4 число 1 если пользователю больше или равно 18 лет, и 0 если меньше.
 
-function f4() {}
+function f4() {
+  let i4 = document.querySelector(".i-4");
+  const b4 = document.querySelector(".b-4");
+  let out4 = document.querySelector(".out-4");
+  let a = +i4.value;
+  b4.onclick = () => {
+    if (a >= 18) {
+      out4.innerHTML = 1;
+    } else {
+      out4.innerHTML = 0;
+    }
+  };
+}
 
 document.querySelector(".b-4").onclick = f4;
 
