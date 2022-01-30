@@ -41,7 +41,23 @@ document.querySelector(".b-2").onclick = f2;
 // Даны 2 input - .i-31 и .i-32, оба - input[type=number]. При нажатии кнопки .b-3 срабатывает функция f3. Функция должна сравнить числа из input, вывести в  .out-3 большее число.
 // Проведите самостоятельный тест работы, введите пары чисел 4 и 9, 9 и 22, 5 и 111.
 
-function f3() {}
+function f3() {
+   let i31 = document.querySelector('.i-31');
+   let i32 = document.querySelector('.i-32');
+   const b3 = document.querySelector('.b-3');
+   let out3 = document.querySelector('.out-3');
+   let a = +i31.value;
+   let b = +i32.value;
+   b3.onclick = () =>{
+     if (a > b) {
+        out3.innerHTML = a;
+     } else {
+        out3.innerHTML = b;
+     }
+   
+   }
+
+}
 
 document.querySelector(".b-3").onclick = f3;
 
