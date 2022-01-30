@@ -171,7 +171,26 @@ document.querySelector(".b-8").onclick = f8;
 //  если от 44(включительно) до 64 (всключительно) - то 3.
 //  В противном случае, вывести 0.
 
-function f9() {}
+function f9() {
+   let i9 = document.querySelector('.i-9');
+   const b9 = document.querySelector('.b-9');
+   let out9 = document.querySelector('.out-9');
+   b9.onclick = () => {
+      if (+i9.value <= 1 || +i9.value <= 32){
+         out9.innerHTML = 1;
+      } else if(+i9.value <= 33 || +i9.value <= 43){
+         out9.innerHTML = 2;
+      }else if(+i9.value <= 44 || +i9.value <= 64){
+          out9.innerHTML = 3;
+      }else if (+i9.value  > 65){
+         out9.innerHTML = 0; 
+      } 
+      
+      
+      
+     
+   }
+}
 
 document.querySelector(".b-9").onclick = f9;
 
