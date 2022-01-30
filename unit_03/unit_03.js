@@ -172,24 +172,20 @@ document.querySelector(".b-8").onclick = f8;
 //  В противном случае, вывести 0.
 
 function f9() {
-   let i9 = document.querySelector('.i-9');
-   const b9 = document.querySelector('.b-9');
-   let out9 = document.querySelector('.out-9');
-   b9.onclick = () => {
-      if (+i9.value <= 1 || +i9.value <= 32){
-         out9.innerHTML = 1;
-      } else if(+i9.value <= 33 || +i9.value <= 43){
-         out9.innerHTML = 2;
-      }else if(+i9.value <= 44 || +i9.value <= 64){
-          out9.innerHTML = 3;
-      }else if (+i9.value  > 65){
-         out9.innerHTML = 0; 
-      } 
-      
-      
-      
-     
-   }
+  let i9 = document.querySelector(".i-9");
+  const b9 = document.querySelector(".b-9");
+  let out9 = document.querySelector(".out-9");
+  b9.onclick = () => {
+    if (+i9.value <= 1 || +i9.value <= 32) {
+      out9.innerHTML = 1;
+    } else if (+i9.value <= 33 || +i9.value <= 43) {
+      out9.innerHTML = 2;
+    } else if (+i9.value <= 44 || +i9.value <= 64) {
+      out9.innerHTML = 3;
+    } else if (+i9.value > 65) {
+      out9.innerHTML = 0;
+    }
+  };
 }
 
 document.querySelector(".b-9").onclick = f9;
@@ -197,7 +193,16 @@ document.querySelector(".b-9").onclick = f9;
 // Task 10
 // Дан select .s-100. По нажатию кнопки, выведите value выбранного option в .out-10.
 
-function f10() {}
+function f10() {
+  let s100 = document.querySelector(".s-100");
+  const b10 = document.querySelector(".b-10");
+  let out10 = document.querySelector(".out-10");
+
+  b10.onclick = () => {
+    let a = s100.value;
+    out10.innerHTML = a;
+  };
+}
 
 document.querySelector(".b-10").onclick = f10;
 
