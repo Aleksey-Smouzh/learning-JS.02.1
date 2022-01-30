@@ -123,7 +123,19 @@ document.querySelector(".b-6").onclick = f6;
 // Task 7.
 // Даны 2 input - .i-71 и .i-72, оба - input[type=number]. При нажатии кнопки .b-7 срабатывает функция f7. Функция должна число из .i-71 возвести в степень .i-72, вывести результат в  .out-7. Для возведения в степень можно использовать **, или Math.pow.
 
-function f7() {}
+function f7() {
+  let i71 = document.querySelector(".i-71");
+  let i72 = document.querySelector(".i-72");
+  const b7 = document.querySelector(".b-7");
+  let out7 = document.querySelector(".out-7");
+
+  let a = +i71.value;
+  let b = +i72.value;
+
+  b7.onclick = () => {
+    out7.innerHTML = Math.pow(a, b);
+  };
+}
 
 document.querySelector(".b-7").onclick = f7;
 
