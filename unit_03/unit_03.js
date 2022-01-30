@@ -23,7 +23,17 @@ document.querySelector(".b-1").onclick = f1;
 let a21 = 45;
 let a22 = 32;
 
-function f2() {}
+function f2() {
+  const b2 = document.querySelector(".b-2");
+  let out2 = document.querySelector(".out-2");
+  b2.onclick = () => {
+    if (a21 >= a22) {
+      out2.innerHTML = a21;
+    } else {
+      out2.innerHTML = a22;
+    }
+  };
+}
 
 document.querySelector(".b-2").onclick = f2;
 
