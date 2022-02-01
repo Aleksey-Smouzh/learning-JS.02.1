@@ -2,6 +2,10 @@
 // При нажатии (click) на .b-1 запускайте f1, которая выводите в .out-1 число 1.
 
 function f1() {
+const b1 = document.querySelector('.b-1').onclick = function(){
+    out1.innerHTML = 1;
+};
+let out1 = document.querySelector('.out-1');
 
 }
 
