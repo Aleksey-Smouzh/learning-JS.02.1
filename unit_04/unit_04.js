@@ -230,7 +230,11 @@ document.querySelector(".s-17").onchange = f17;
 // Task 18
 // При смене выбранного значения в s-18, получайте из него value выбранного option и присвойте данный value в input .i-18.
 
-function f18() {}
+function f18() {
+  let s18 = document.querySelector(".s-18");
+  let i18 = document.querySelector(".i-18");
+  i18.value = s18.value;
+}
 
 document.querySelector(".s-18").onchange = f18;
 
