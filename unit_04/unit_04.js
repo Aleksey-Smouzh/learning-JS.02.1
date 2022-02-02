@@ -29,7 +29,10 @@ document.querySelector('.i-2').onclick = f2;
 //  При нажатии (click) на .p-3 запускайте f3, которая выводите в .out-3 число 3. Т.е. как видите, мы можем повеcить клик на любой элемент.
 
 function f3() {
-
+document.querySelector('.p-3').onclick = function(){
+out3.innerHTML = 3;
+}
+let out3 = document.querySelector('.out-3');
 }
 
 document.querySelector('.p-3').onclick = f3;
