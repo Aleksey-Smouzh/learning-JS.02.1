@@ -220,7 +220,10 @@ document.querySelector(".b-16").onclick = f16;
 // Task 17
 // При смене выбранного значения .s-17 выводите в .out-17 value выбранного option из .s-17.
 
-function f17() {}
+function f17() {
+  let s17 = document.querySelector(".s-17");
+  document.querySelector(".out-17").innerHTML = s17.value;
+}
 
 document.querySelector(".s-17").onchange = f17;
 
