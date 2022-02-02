@@ -108,8 +108,7 @@ document.querySelector(".b-7").onclick = f7;
 function f8() {
   let out8 = document.querySelector(".out-8");
   document.querySelector(".b-8").onclick = () => {
-    out8.innerHTML =` <div class="js2">new div</div> `
-  
+    out8.innerHTML = ` <div class="js2">new div</div> `;
   };
 }
 
@@ -118,7 +117,17 @@ document.querySelector(".b-8").onclick = f8;
 // Task 9
 // При нажатии кнопки .b-9 запускаем функцию f9. Функция проверяет checked элемента .r-9. Если элемент выбран (checked) то выводит в .out-9 value radiobutton. Если не выбран - выводит false.
 
-function f9() {}
+function f9() {
+  let r9 = document.querySelector(".r-9");
+  let out9 = document.querySelector(".out-9");
+  document.querySelector(".b-9").onclick = () => {
+    if (r9.checked) {
+      out9.innerHTML = r9.value;
+    } else {
+      out9.innerHTML = "false";
+    }
+  };
+}
 
 document.querySelector(".b-9").onclick = f9;
 
