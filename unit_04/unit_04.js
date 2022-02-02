@@ -241,13 +241,20 @@ document.querySelector(".s-18").onchange = f18;
 // Task 19
 // На странице создан div.out-19. По нажатию кнопки, получите из него текст и присвойте в value элемента .i-19.
 
-function f19() {}
+function f19() {
+  let i19 = document.querySelector(".i-19");
+  let out19 = document.querySelector(".out-19");
+
+  i19.value = out19.textContent;
+}
 
 document.querySelector(".b-19").onclick = f19;
 
 // Task 20
 // У вас есть два select. Напишите код, который при изменении select .s-201 будет аналогично изменять выбранный option в .s-202.
 
-function f20() {}
+function f20() {
+    
+}
 
 document.querySelector(".s-201").onchange = f20;
