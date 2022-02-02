@@ -147,11 +147,11 @@ document.querySelector(".b-10").onclick = f10;
 // При нажатии кнопки .b-11 запускается функция f11. Функция получает цвет из .i-111 и присваивает как value элементу .i-112. Т.е. после нажатия кнопки выбранный цвета в первом и втором input станут одинаковые.
 
 function f11() {
-    let i111 = document.querySelector('.i-111');
-    let i112 = document.querySelector('.i-112');
-    document.querySelector('.b-11').onclick = () =>{
-        i112.value = i111.value
-    }
+  let i111 = document.querySelector(".i-111");
+  let i112 = document.querySelector(".i-112");
+  document.querySelector(".b-11").onclick = () => {
+    i112.value = i111.value;
+  };
 }
 
 document.querySelector(".b-11").onclick = f11;
@@ -159,7 +159,13 @@ document.querySelector(".b-11").onclick = f11;
 // Task 12
 // При нажатии кнопки .b-12 запускается функция f12. Функция выводит дату из .i-12 в out-12.
 
-function f12() {}
+function f12() {
+  let i12 = document.querySelector(".i-12");
+  let out12 = document.querySelector(".out-12");
+  document.querySelector(".b-12").onclick = () => {
+    out12.innerHTML = i12.value;
+  };
+}
 
 document.querySelector(".b-12").onclick = f12;
 
