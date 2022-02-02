@@ -194,7 +194,13 @@ document.querySelector(".b-14").onclick = f14;
 // Task 15
 // При нажатии кнопки .b-15 функция должна выводить текст из .i-15 в textarea .t-15 и в .out-15.
 
-function f15() {}
+function f15() {
+  let i15 = document.querySelector(".i-15");
+  document.querySelector(".b-15").onclick = () => {
+    document.querySelector(".t-15").innerHTML = i15.value;
+    document.querySelector(".out-15").innerHTML = i15.value;
+  };
+}
 
 document.querySelector(".b-15").onclick = f15;
 
