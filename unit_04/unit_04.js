@@ -172,7 +172,10 @@ document.querySelector(".b-12").onclick = f12;
 // Task 13
 //  При изменении положения ползунка .i-13 выводите его значение в out-13. Обратите внимание на событие.
 
-function f13() {}
+function f13() {
+    let i13 = document.querySelector('.i-13');
+    let out13 = document.querySelector('.out-13').innerHTML = i13.value;
+}
 
 document.querySelector(".i-13").oninput = f13;
 
