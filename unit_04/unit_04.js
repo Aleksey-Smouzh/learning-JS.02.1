@@ -254,7 +254,9 @@ document.querySelector(".b-19").onclick = f19;
 // У вас есть два select. Напишите код, который при изменении select .s-201 будет аналогично изменять выбранный option в .s-202.
 
 function f20() {
-    
+  let s1 = document.querySelector(".s-201");
+  let s2 = document.querySelector(".s-202");
+  s2.value = s1.value;
 }
 
 document.querySelector(".s-201").onchange = f20;
