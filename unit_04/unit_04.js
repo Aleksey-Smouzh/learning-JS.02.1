@@ -173,8 +173,8 @@ document.querySelector(".b-12").onclick = f12;
 //  При изменении положения ползунка .i-13 выводите его значение в out-13. Обратите внимание на событие.
 
 function f13() {
-    let i13 = document.querySelector('.i-13');
-    let out13 = document.querySelector('.out-13').innerHTML = i13.value;
+  let i13 = document.querySelector(".i-13");
+  document.querySelector(".out-13").innerHTML = i13.value;
 }
 
 document.querySelector(".i-13").oninput = f13;
@@ -182,7 +182,12 @@ document.querySelector(".i-13").oninput = f13;
 // Task 14
 // При нажатии на кнопку выводите текст из textarea .t-14 в .out-14.
 
-function f14() {}
+function f14() {
+  document.querySelector(".b-14").onclick = () => {
+    let t14 = document.querySelector(".t-14");
+    document.querySelector(".out-14").innerHTML = t14.value;
+  };
+}
 
 document.querySelector(".b-14").onclick = f14;
 
