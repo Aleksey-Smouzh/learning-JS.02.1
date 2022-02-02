@@ -146,7 +146,13 @@ document.querySelector(".b-10").onclick = f10;
 // Task 11
 // При нажатии кнопки .b-11 запускается функция f11. Функция получает цвет из .i-111 и присваивает как value элементу .i-112. Т.е. после нажатия кнопки выбранный цвета в первом и втором input станут одинаковые.
 
-function f11() {}
+function f11() {
+    let i111 = document.querySelector('.i-111');
+    let i112 = document.querySelector('.i-112');
+    document.querySelector('.b-11').onclick = () =>{
+        i112.value = i111.value
+    }
+}
 
 document.querySelector(".b-11").onclick = f11;
 
