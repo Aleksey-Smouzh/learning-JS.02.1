@@ -134,7 +134,12 @@ document.querySelector(".b-9").onclick = f9;
 // Task 10
 // При нажатии кнопки .b-10 запускаем функцию f10. Функция получает из .i-10 значение цвета и окрашивает style.background элемента .out-10 в этот цвет.
 
-function f10() {}
+function f10() {
+  let i10 = document.querySelector(".i-10");
+  document.querySelector(".b-10").onclick = () => {
+    document.querySelector(".out-10").style.backgroundColor = i10.value;
+  };
+}
 
 document.querySelector(".b-10").onclick = f10;
 
