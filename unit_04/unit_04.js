@@ -208,6 +208,10 @@ document.querySelector(".b-15").onclick = f15;
 // При нажатии на кнопку .b-16 выводите в .out-16 value выбранного option из .s-16.
 
 function f16() {
+  let s16 = document.querySelector(".s-16");
+  document.querySelector(".b-16").onclick = () => {
+    document.querySelector(".out-16").innerHTML = s16.value;
+  };
   // для получения выбранного option просто получите select в переменную и select.value;
 }
 
