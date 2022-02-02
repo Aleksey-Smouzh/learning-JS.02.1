@@ -70,7 +70,13 @@ document.querySelector(".b-5").onclick = f5;
 // Task 6.
 // При нажатии на кнопку выводите value из input.i-6 в div.out-6. Обратите внимание, что даже скрытый hidden input - нам не помеха.
 
-function f6() {}
+function f6() {
+  let i6 = document.querySelector(".i-6");
+  let out6 = document.querySelector(".out-6");
+  document.querySelector(".b-6").onclick = () => {
+    out6.innerHTML = i6.value;
+  };
+}
 
 document.querySelector(".b-6").onclick = f6;
 
