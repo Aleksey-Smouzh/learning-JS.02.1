@@ -83,14 +83,37 @@ document.querySelector(".b-6").onclick = f6;
 // Task 7.
 // При нажатии на кнопку выводите в div.out-71 value прописанное в input .i-7. В .out-72 выводите 1 если длина пароля больше или равна 6 или 0 если меньше. Для подсчета количества символов в строке используйте length.
 
-function f7() {}
+function f7() {
+  //нужно переделать
+  let i7 = document.querySelector(".i-7");
+  let out71 = document.querySelector(".out-71");
+  let out72 = document.querySelector(".out-72");
+  document.querySelector(".b-7").onclick = () => {
+    out71.innerHTML = i7.value;
+    for (let i = 0; i < i7.value.length; ++i) {
+      if (i7.value.length[i] <= 6) {
+        out72.innerHTML = 1;
+      } else {
+        out72.innerHTML = 0;
+      }
+    }
+  };
+}
 
 document.querySelector(".b-7").onclick = f7;
 
 // Task 8.
 // При нажатии кнопки .b-8 запускается функция f8. Функция с помощью innerHTML создает в .out-8 новый div с классом "js2" и текстом "new div". Нажали несколько раз? Создаем несколько раз!
 
-function f8() {}
+function f8() {
+  let out8 = document.querySelector(".out-8");
+  document.querySelector(".b-8").onclick = () => {
+    out8.innerHTML =
+      document.createElement("div").className =
+      "js2".value =
+        "new div";
+  };
+}
 
 document.querySelector(".b-8").onclick = f8;
 
