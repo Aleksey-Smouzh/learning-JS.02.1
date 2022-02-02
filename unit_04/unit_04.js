@@ -108,10 +108,8 @@ document.querySelector(".b-7").onclick = f7;
 function f8() {
   let out8 = document.querySelector(".out-8");
   document.querySelector(".b-8").onclick = () => {
-    out8.innerHTML =
-      document.createElement("div").className =
-      "js2".value =
-        "new div";
+    out8.innerHTML =` <div class="js2">new div</div> `
+  
   };
 }
 
