@@ -255,6 +255,12 @@ document.querySelector(".b-14").onclick = t14;
 // 10_0_9_1_8_2_7_3_6_4_5_5_4_6_3_7_2_8_1_9_0_10_
 // Подсказка (10 - i) + '_' + i + '_'
 
-function t15() {}
+function t15() {
+    out15 = '';
+    for (let i = 0; i < 11; ++i){
+        out15 += (10 - i) + "_" + i + '_';
+    }
+document.querySelector('.out-15').innerHTML = out15
+}
 
 document.querySelector(".b-15").onclick = t15;
