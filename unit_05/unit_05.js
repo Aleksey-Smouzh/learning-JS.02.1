@@ -90,7 +90,13 @@ document.querySelector(".b-5").onclick = t5;
 //
 
 function t6() {
-    out6
+    let i6 = document.querySelector('.i-6').value
+    out6 = "";
+     for (let i = 1; i <= i6; ++i){
+        console.log(i)
+        out6 += '******' + '<br>' ;
+    }
+document.querySelector('.out-6').innerHTML = out6
 }
 
 document.querySelector(".b-6").onclick = t6;
