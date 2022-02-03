@@ -148,7 +148,23 @@ document.querySelector(".b-8").onclick = t8;
 // Задача решается с помощью цикла. Подсказка - вначале делаем проверку, а потом запускаем цикл.
 // цикл - один
 
-function t9() {}
+function t9() {
+    let i91 = document.querySelector('.i-91').value;
+    let i92 = document.querySelector('.i-92').value;
+    out9 = "";
+    if (i91 < i92) {
+        for (let i = i91; i <= i92; ++i){
+            out9 += i + "_";
+           
+        }
+
+    }else {
+        for (let i = i92; i <= i91; ++i) {
+            out9 += i + "_";
+        };
+    }
+    document.querySelector('.out-9').innerHTML = out9;
+}
 
 document.querySelector(".b-9").onclick = t9;
 
