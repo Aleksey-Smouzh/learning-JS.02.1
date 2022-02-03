@@ -127,13 +127,13 @@ document.querySelector(".b-7").onclick = t7;
 // Задача решается с помощью цикла.
 
 function t8() {
-    let i81 = document.querySelector('.i-81').value;
-    let i82 = document.querySelector('.i-82').value;
-    out8 = "";
-    for (let i = i81; i <= i82; ++i){
-        out8 += i + '_';
-    }
-    document.querySelector('.out-8').innerHTML = out8
+  let i81 = document.querySelector(".i-81").value;
+  let i82 = document.querySelector(".i-82").value;
+  out8 = "";
+  for (let i = i81; i <= i82; ++i) {
+    out8 += i + "_";
+  }
+  document.querySelector(".out-8").innerHTML = out8;
 }
 
 document.querySelector(".b-8").onclick = t8;
@@ -149,21 +149,19 @@ document.querySelector(".b-8").onclick = t8;
 // цикл - один
 
 function t9() {
-    let i91 = document.querySelector('.i-91').value;
-    let i92 = document.querySelector('.i-92').value;
-    out9 = "";
-    if (i91 < i92) {
-        for (let i = i91; i <= i92; ++i){
-            out9 += i + "_";
-           
-        }
-
-    }else {
-        for (let i = i92; i <= i91; ++i) {
-            out9 += i + "_";
-        };
+  let i91 = document.querySelector(".i-91").value;
+  let i92 = document.querySelector(".i-92").value;
+  out9 = "";
+  if (i91 < i92) {
+    for (let i = i91; i <= i92; ++i) {
+      out9 += i + "_";
     }
-    document.querySelector('.out-9').innerHTML = out9;
+  } else {
+    for (let i = i92; i <= i91; ++i) {
+      out9 += i + "_";
+    }
+  }
+  document.querySelector(".out-9").innerHTML = out9;
 }
 
 document.querySelector(".b-9").onclick = t9;
@@ -172,7 +170,13 @@ document.querySelector(".b-9").onclick = t9;
 // Кнопка .b-10 запускает функцию t10. Функция должна выводить в .out-10 четные годы от 1950 до 1970 включительно.
 // Разделитель - знак подчеркивания. Задача решается через цикл, а четность - через шаг (равный 2).
 
-function t10() {}
+function t10() {
+  out10 = "";
+  for (let i = 1950; i <= 1970; i = i + 2) {
+    out10 += i + "_";
+  }
+  document.querySelector(".out-10").innerHTML = out10;
+}
 
 document.querySelector(".b-10").onclick = t10;
 
