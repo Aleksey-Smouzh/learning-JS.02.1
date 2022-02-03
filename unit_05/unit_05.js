@@ -236,7 +236,17 @@ document.querySelector(".b-13").onclick = t13;
 // перебрать их с помощью цикла. Обращение к элементу выглядит так elem[i]
 // вывести в .out-14 value выбранного. Проверить выбран ли элемент можно с помощью elem[i].checked.
 
-function t14() {}
+function t14() {
+   let elem = document.querySelectorAll('.i-14'); 
+   out14 = "";
+   for( let i = 0; i < elem.length; ++i){
+      if (elem[i].checked){
+          out14 += elem[i].value
+      }
+   }
+   document.querySelector('.out-14').innerHTML = out14
+   console.log(out14)
+}
 
 document.querySelector(".b-14").onclick = t14;
 
