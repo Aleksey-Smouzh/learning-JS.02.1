@@ -207,7 +207,14 @@ document.querySelector(".b-11").onclick = t11;
 // перебрать их с помощью цикла. Обращение к div выглядит так elem[i]
 // применить к каждому elem[i].style.background = ‘orange’
 
-function t12() {}
+function t12() {
+  let div12 = document.querySelectorAll('.div-12')
+  console.log(div12);
+  out12 = '';
+  for (let i = 0; i < div12.length; ++i){
+      out12 += div12[i].style.background = "orange";
+  } 
+}
 
 document.querySelector(".b-12").onclick = t12;
 
