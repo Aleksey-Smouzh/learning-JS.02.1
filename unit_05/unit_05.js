@@ -37,7 +37,7 @@ function t3() {
   for (let i = 25; i >= 7; i--) {
     out3 += i + "_";
   }
-  document.querySelector('.out-3').innerHTML = out3;
+  document.querySelector(".out-3").innerHTML = out3;
 }
 
 document.querySelector(".b-3").onclick = t3;
@@ -48,7 +48,11 @@ document.querySelector(".b-3").onclick = t3;
 // от 77 до 35 c шагом 3. Разделитель - знак подчеркивания. Задача решается с помощью цикла.
 
 function t4() {
-    let out
+  let out4 = "_";
+  for (let i = 77; i >= 35; i = i - 3) {
+    out4 += i + "_";
+  }
+  document.querySelector(".out-4").innerHTML = out4;
 }
 
 document.querySelector(".b-4").onclick = t4;
@@ -58,7 +62,20 @@ document.querySelector(".b-4").onclick = t4;
 // 1_*2_**3_*4_**5_*6_**7_*8_**9_*10_**11_*12_**13_*14_**15_*16_**17_*
 // от 1 до 17 c шагом 1. Разделитель - знак подчеркивания и звездочка (если число нечетное, и две звездочки если четное). Задача решается с помощью цикла.
 
-function t5() {}
+function t5() {
+  let out5 = '';
+  
+  for (let i = 1; i <= 17; i++) {
+  if (i % 2){
+     out5 += i + '_*';
+  }else {
+      out5 += i + '_**'
+  }
+    
+  }
+  console.log(out5);
+  document.querySelector(".out-5").innerHTML = out5;
+}
 
 document.querySelector(".b-5").onclick = t5;
 
@@ -72,7 +89,9 @@ document.querySelector(".b-5").onclick = t5;
 //Задача решается с помощью цикла. В каждой итерации цикл выводит 6 звездочек. Перенос строки - br. Количество строк (итераций, повторений) цикла вводит пользователь в i-6.
 //
 
-function t6() {}
+function t6() {
+    out6
+}
 
 document.querySelector(".b-6").onclick = t6;
 
