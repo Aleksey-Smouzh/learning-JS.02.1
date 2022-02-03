@@ -63,15 +63,14 @@ document.querySelector(".b-4").onclick = t4;
 // от 1 до 17 c шагом 1. Разделитель - знак подчеркивания и звездочка (если число нечетное, и две звездочки если четное). Задача решается с помощью цикла.
 
 function t5() {
-  let out5 = '';
-  
+  let out5 = "";
+
   for (let i = 1; i <= 17; i++) {
-  if (i % 2){
-     out5 += i + '_*';
-  }else {
-      out5 += i + '_**'
-  }
-    
+    if (i % 2) {
+      out5 += i + "_*";
+    } else {
+      out5 += i + "_**";
+    }
   }
   console.log(out5);
   document.querySelector(".out-5").innerHTML = out5;
@@ -90,13 +89,13 @@ document.querySelector(".b-5").onclick = t5;
 //
 
 function t6() {
-    let i6 = document.querySelector('.i-6').value
-    out6 = "";
-     for (let i = 1; i <= i6; ++i){
-        console.log(i)
-        out6 += '******' + '<br>' ;
-    }
-document.querySelector('.out-6').innerHTML = out6
+  let i6 = document.querySelector(".i-6");
+  out6 = "";
+  for (let i = 1; i <= i6.value; ++i) {
+    console.log(i);
+    out6 += "******" + "<br>";
+  }
+  document.querySelector(".out-6").innerHTML = out6;
 }
 
 document.querySelector(".b-6").onclick = t6;
@@ -108,7 +107,14 @@ document.querySelector(".b-6").onclick = t6;
 // 4_3_2_1_0_
 // Задача решается с помощью цикла.
 
-function t7() {}
+function t7() {
+  let i7 = document.querySelector(".i-7");
+  out7 = "";
+  for (let i = i7.value; i >= 0; i--) {
+    out7 += i + "_";
+  }
+  document.querySelector(".out-7").innerHTML = out7;
+}
 
 document.querySelector(".b-7").onclick = t7;
 
@@ -120,7 +126,15 @@ document.querySelector(".b-7").onclick = t7;
 //  4_5_6_7_8_
 // Задача решается с помощью цикла.
 
-function t8() {}
+function t8() {
+    let i81 = document.querySelector('.i-81').value;
+    let i82 = document.querySelector('.i-82').value;
+    out8 = "";
+    for (let i = i81; i <= i82; ++i){
+        out8 += i + '_';
+    }
+    document.querySelector('.out-8').innerHTML = out8
+}
 
 document.querySelector(".b-8").onclick = t8;
 
