@@ -6,7 +6,15 @@
 // <p>где звездочкa рисуются с помощью внутреннего цикла от 0 до 3, а _ с помощью внешнего.</p>
 
 function t1() {
+let o1 = "";
+for( let i = 0; i < 3; i++){
+    for (let k = 0; k < 3; k++){
+        o1 +=  "*" 
+    }
+    o1 += "_"
+}
 
+document.querySelector('.out-1').innerHTML = o1
 }
 
 document.querySelector('.b-1').onclick = t1;
@@ -21,7 +29,7 @@ document.querySelector('.b-1').onclick = t1;
 // *_*_*_
 // <p>Решить задачу с помощью вложенных циклов. Внешний цикл выводит цифру и перенос строки br, внутренний - *_, и после этого внешний - знак переноса.</p>
 function t2() {
-
+ 
 }
 
 document.querySelector('.b-2').onclick = t2;
