@@ -92,7 +92,7 @@ function t6() {
   let i6 = document.querySelector(".i-6");
   out6 = "";
   for (let i = 1; i <= i6.value; ++i) {
-    console.log(i);
+    
     out6 += "******" + "<br>";
   }
   document.querySelector(".out-6").innerHTML = out6;
@@ -190,7 +190,7 @@ document.querySelector(".b-10").onclick = t10;
 
 function t11() {
 let divs11 = document.querySelectorAll('.div-11');
-console.log(divs11.values);
+
 out11 = "";
 for(let i = 0; i < divs11.length; ++i){
     out11 += divs11[i].innerHTML + "_";
@@ -209,7 +209,7 @@ document.querySelector(".b-11").onclick = t11;
 
 function t12() {
   let div12 = document.querySelectorAll('.div-12')
-  console.log(div12);
+ 
   out12 = '';
   for (let i = 0; i < div12.length; ++i){
       out12 += div12[i].style.background = "orange";
@@ -245,7 +245,7 @@ function t14() {
       }
    }
    document.querySelector('.out-14').innerHTML = out14
-   console.log(out14)
+   
 }
 
 document.querySelector(".b-14").onclick = t14;
