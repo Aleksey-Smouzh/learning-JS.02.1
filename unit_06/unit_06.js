@@ -136,7 +136,18 @@ document.querySelector(".b-6").onclick = t6;
 // ***
 // ****
 
-function t7() {}
+function t7() {
+let o7 = "";
+for (let i = 0; i <= 3; i++){
+    o7 += "*";
+    for (let k = 1; k <= i; k++){
+     o7 += "*";
+    }
+   o7 += "<br>";
+   
+}
+document.querySelector('.out-7').innerHTML = o7
+}
 
 document.querySelector(".b-7").onclick = t7;
 
