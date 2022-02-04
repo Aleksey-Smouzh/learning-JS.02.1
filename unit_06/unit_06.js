@@ -137,16 +137,15 @@ document.querySelector(".b-6").onclick = t6;
 // ****
 
 function t7() {
-let o7 = "";
-for (let i = 0; i <= 3; i++){
+  let o7 = "";
+  for (let i = 0; i <= 3; i++) {
     o7 += "*";
-    for (let k = 1; k <= i; k++){
-     o7 += "*";
+    for (let k = 1; k <= i; k++) {
+      o7 += "*";
     }
-   o7 += "<br>";
-   
-}
-document.querySelector('.out-7').innerHTML = o7
+    o7 += "<br>";
+  }
+  document.querySelector(".out-7").innerHTML = o7;
 }
 
 document.querySelector(".b-7").onclick = t7;
@@ -161,7 +160,16 @@ document.querySelector(".b-7").onclick = t7;
 // **
 // *
 
-function t8() {}
+function t8() {
+  let o8 = "";
+  for (let i = 5; i >= 1; i--) {
+    for (let k = 0; k < i; k++) {
+      o8 += "*";
+    }
+    o8 += "<br>";
+  }
+  document.querySelector(".out-8").innerHTML = o8;
+}
 
 document.querySelector(".b-8").onclick = t8;
 
@@ -174,7 +182,16 @@ document.querySelector(".b-8").onclick = t8;
 // 1_2_3_4_
 // 1_2_3_4_5_
 
-function t9() {}
+function t9() {
+  let o9 = "";
+  for (let i = 1; i <= 6; i++){
+    for (let k = 1; k < i; k++){
+      o9 += k + "_";
+    }
+      o9 += "<br>"
+  }
+  document.querySelector('.out-9').innerHTML = o9
+}
 
 document.querySelector(".b-9").onclick = t9;
 
