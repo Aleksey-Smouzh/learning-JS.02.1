@@ -184,13 +184,13 @@ document.querySelector(".b-8").onclick = t8;
 
 function t9() {
   let o9 = "";
-  for (let i = 1; i <= 6; i++){
-    for (let k = 1; k < i; k++){
+  for (let i = 1; i <= 6; i++) {
+    for (let k = 1; k < i; k++) {
       o9 += k + "_";
     }
-      o9 += "<br>"
+    o9 += "<br>";
   }
-  document.querySelector('.out-9').innerHTML = o9
+  document.querySelector(".out-9").innerHTML = o9;
 }
 
 document.querySelector(".b-9").onclick = t9;
@@ -204,6 +204,21 @@ document.querySelector(".b-9").onclick = t9;
 //31_32_33_34_35_36_37_38_39_40_
 //41_42_43_44_45_46_47_48_49_50_
 
-function t10() {}
+function t10() {
+  let o = '';
+  for ( let i = 0; i < 5; i++){
+    for( let k = 1; k <= 10; k++){
+      if (i == 0 && k < 10){
+        o += `${i}${k + '_'}`;
+      } else {
+        o += (10 * i + k) + "_";
+      }
+      
+    }
+    o += "<br>";
+  }
+
+document.querySelector('.out-10').innerHTML = o
+}
 
 document.querySelector(".b-10").onclick = t10;
