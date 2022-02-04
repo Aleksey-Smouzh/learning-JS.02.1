@@ -68,14 +68,14 @@ document.querySelector(".b-3").onclick = t3;
 // 1_1*2*3*4*5*2_1*2*3*4*5*3_1*2*3*4*5*
 // Внешний цикл выводит цифру и _, а внутренний выводит от 1 до 5 с *
 function t4() {
-let o4 = '';
-for (let i = 1; i <= 5; i++){
+  let o4 = "";
+  for (let i = 1; i <= 5; i++) {
     o4 += i + "_";
-    for (let k = 1; k <= 5; k++){
-        o4 += k + "*";
+    for (let k = 1; k <= 5; k++) {
+      o4 += k + "*";
     }
-}
-document.querySelector('.out-4').innerHTML = o4
+  }
+  document.querySelector(".out-4").innerHTML = o4;
 }
 
 document.querySelector(".b-4").onclick = t4;
@@ -88,7 +88,21 @@ document.querySelector(".b-4").onclick = t4;
 // 101010
 
 // <p>Вложенный цикл в зависимости от четного или нет k (счетчика цикла) рисует или 0 или 1. Внешний цикл - br.</p>
-function t5() {}
+function t5() {
+  let o5 = "";
+  for (let i = 1; i <= 3; i++) {
+    for (let k = 1; k < 7; k++) {
+      if (k % 2 == 0) {
+        o5 += "0";
+      } else {
+        o5 += "1";
+      }
+    }
+    o5 += "<br>";
+  }
+
+  document.querySelector(".out-5").innerHTML = o5;
+}
 
 document.querySelector(".b-5").onclick = t5;
 
@@ -99,7 +113,18 @@ document.querySelector(".b-5").onclick = t5;
 // 10x01x
 // 10x01x
 
-function t6() {}
+function t6() {
+  let o6 = "";
+  for (let i = 0; i <= 2; i++) {
+    for (let k = 0; k <= 2; k++) {
+      if (k == 2) {
+        o6 += "10" + "x" + "01" + "x";
+      }
+    }
+    o6 += "<br>";
+  }
+  document.querySelector(".out-6").innerHTML = o6;
+}
 
 document.querySelector(".b-6").onclick = t6;
 
