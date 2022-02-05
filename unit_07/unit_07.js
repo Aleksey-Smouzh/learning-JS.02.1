@@ -67,7 +67,7 @@ document.querySelector(".b-5").onclick = function () {
 // Напишите функцию t6, которая принимает 2 числа и возвращает случайное целое число от первого до второго принятого параметра. Внимание, это первая задача, решение которой нужно найти в google. Не пишите решение сами!
 
 function t6(a, b) {
-return Math.random(Math.random() * (b - a + 1 )) + a
+  return Math.random(Math.random() * (b - a + 1)) + a;
 }
 
 document.querySelector(".b-6").onclick = function () {
@@ -78,8 +78,8 @@ document.querySelector(".b-6").onclick = function () {
 // Напишите функцию t7, которая возвращает случайный цвет в формате rgb(x,y,z)(строка).Где x, y, z - случайные числа в диапазоне[0, 255].
 
 function t7() {
-    return `rgb(${t6(99, 255)},${t6(88, 255)},${t6(190, 255)})`;
-    console.log()
+  return `rgb(${t6(99, 255)},${t6(88, 255)},${t6(190, 255)})`;
+  console.log();
   // итак, одна из сложных задач. Нам нужно
   // сделать такую строку
   // rgb(33,123,255) - числа могут быть любые от 0 до 255
@@ -96,11 +96,15 @@ document.querySelector(".b-7").onclick = function () {
 // Task 8
 // Напишите функцию t8, которая принимает строку в качестве параметра и возвращает результат с очищенными пробелами в начале и вконце строки. Т.е.принимает _hello_(где знак _ символизирует пробел), а возвращает hello. Для удаления пробелов - используйте trim.
 
-function t8(str) {}
+function t8(str) {
+  return str.trim();
+}
 
 document.querySelector(".b-8").onclick = function () {
   let s = "            Hello                ";
+
   console.log(s);
+
   console.log(t8(s));
 };
 
