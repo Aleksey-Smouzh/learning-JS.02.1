@@ -112,11 +112,11 @@ document.querySelector(".b-8").onclick = function () {
 // Напишите функцию t9, которая принимает число и возвращает true, если число четное, и false если не четное.
 
 function t9(num) {
-    if (num % 2){
-        return false
-    }else {
-        return true
-    }
+  if (num % 2) {
+    return false;
+  } else {
+    return true;
+  }
 }
 
 document.querySelector(".b-9").onclick = function () {
@@ -126,8 +126,14 @@ document.querySelector(".b-9").onclick = function () {
 // Task 10
 // Создайте функцию t10, которая принимает 2 числа и возвращает большее из них.В случае равенства - первое.
 
-function t10(x, y) {}
+function t10(x, y) {
+  if (x >= y) {
+    return x;
+  } else {
+    return y;
+  }
+}
 
 document.querySelector(".b-10").onclick = function () {
-  document.querySelector(".out-10").textContent = t10(3, 9);
+  document.querySelector(".out-10").textContent = t10(10, 9);
 };
