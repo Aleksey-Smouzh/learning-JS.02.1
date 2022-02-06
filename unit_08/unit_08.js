@@ -99,19 +99,18 @@ document.querySelector(".b-5").onclick = t5;
 function t6() {
 let o6 = "";
 let k = 0;
-let i6 = document.querySelector('.i-6').value
+let inp = document.querySelector('.i-6').value
 
- while (k < i6){
-     console.log(k)
-     let p = 0;
-    while (p < 6) {
-        console.log(p)
-        o6 += "*";
-        p++;
-    } 
-    o6 += "<br>";
+while (k < inp){
+    console.log(k)
+     s = 0;
     k++;
+    while (s < 6) {
+      o6 += "*"  
+        s++;
     }
+    o6 += "<br>"
+}
 
 document.querySelector('.out-6').innerHTML = o6
 }
@@ -125,7 +124,17 @@ document.querySelector(".b-6").onclick = t6;
 //     4_3_2_1_0_
 // Задача решается с помощью цикла  while.
 
-function t7() {}
+function t7() {
+  let o7 = "";
+  let inp = document.querySelector('.i-7').value;
+  let k = inp;
+  while(0 <= k){
+     
+      o7 += k + "_";
+      k--;
+  }
+    document.querySelector('.out-7').innerHTML = o7;
+}
 
 document.querySelector(".b-7").onclick = t7;
 
