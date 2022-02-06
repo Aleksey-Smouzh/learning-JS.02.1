@@ -72,18 +72,17 @@ document.querySelector(".b-4").onclick = t4;
 // от 1 до 17 c шагом 1. Разделитель - знак подчеркивания и одна звездочка если число нечетное, и две звездочки если четное. Задача решается с помощью цикла  while.
 
 function t5() {
-    let o5 = '';
-    let k = 0;
-    while (k < 17){
-       k++;
-       if (k % 2){
-        o5 += k + "_*"
-       } else{  
-        o5 += k + "_**"
-       }
-       
+  let o5 = "";
+  let k = 0;
+  while (k < 17) {
+    k++;
+    if (k % 2) {
+      o5 += k + "_*";
+    } else {
+      o5 += k + "_**";
     }
-    document.querySelector('.out-5').innerHTML = o5
+  }
+  document.querySelector(".out-5").innerHTML = o5;
 }
 
 document.querySelector(".b-5").onclick = t5;
@@ -97,22 +96,22 @@ document.querySelector(".b-5").onclick = t5;
 // Количество строк (итераций, повторений) цикла  while вводит пользователь в .i-6.
 
 function t6() {
-let o6 = "";
-let k = 0;
-let inp = document.querySelector('.i-6').value
+  let o6 = "";
+  let k = 0;
+  let inp = document.querySelector(".i-6").value;
 
-while (k < inp){
-    console.log(k)
-     s = 0;
+  while (k < inp) {
+    console.log(k);
+    s = 0;
     k++;
     while (s < 6) {
-      o6 += "*"  
-        s++;
+      o6 += "*";
+      s++;
     }
-    o6 += "<br>"
-}
+    o6 += "<br>";
+  }
 
-document.querySelector('.out-6').innerHTML = o6
+  document.querySelector(".out-6").innerHTML = o6;
 }
 
 document.querySelector(".b-6").onclick = t6;
@@ -126,14 +125,13 @@ document.querySelector(".b-6").onclick = t6;
 
 function t7() {
   let o7 = "";
-  let inp = document.querySelector('.i-7').value;
+  let inp = document.querySelector(".i-7").value;
   let k = inp;
-  while(0 <= k){
-     
-      o7 += k + "_";
-      k--;
+  while (0 <= k) {
+    o7 += k + "_";
+    k--;
   }
-    document.querySelector('.out-7').innerHTML = o7;
+  document.querySelector(".out-7").innerHTML = o7;
 }
 
 document.querySelector(".b-7").onclick = t7;
@@ -147,15 +145,15 @@ document.querySelector(".b-7").onclick = t7;
 // Задача решается с помощью цикла  while.
 
 function t8() {
-    let o8 = "";
-    let i1 = document.querySelector(".i-81").value;
-    let i2 = document.querySelector('.i-82').value;
-    
-    while(i1 <= i2){
-         o8 += i1 + "_"
-         i1++
-    }
-    document.querySelector('.out-8').innerHTML = o8
+  let o8 = "";
+  let i1 = document.querySelector(".i-81").value;
+  let i2 = document.querySelector(".i-82").value;
+
+  while (i1 <= i2) {
+    o8 += i1 + "_";
+    i1++;
+  }
+  document.querySelector(".out-8").innerHTML = o8;
 }
 
 document.querySelector(".b-8").onclick = t8;
@@ -170,26 +168,24 @@ document.querySelector(".b-8").onclick = t8;
 // Задача решается с помощью цикла. Подсказка - вначале делаем проверку и при необходимости поменять местами значения в переменных местами, а потом запускаем цикл  while.
 
 function t9() {
-    let o9 = "";
-    let i1 = document.querySelector('.i-91').value;
-    let i2 = document.querySelector('.i-92').value;
-     let k = i1;
-     let s = i2;
+  let o9 = "";
+  let i1 = document.querySelector(".i-91").value;
+  let i2 = document.querySelector(".i-92").value;
+  let k = i1;
+  let s = i2;
 
-    if (k < s){
-      while (k <= s){
-          o9 += k + "_";
-          k++;
-          
-      }
-    }else{
-        while(s <= k){
-            o9 += s + "_";
-            s++;
-            
-        }
+  if (k < s) {
+    while (k <= s) {
+      o9 += k + "_";
+      k++;
     }
-    document.querySelector('.out-9').innerHTML = o9
+  } else {
+    while (s <= k) {
+      o9 += s + "_";
+      s++;
+    }
+  }
+  document.querySelector(".out-9").innerHTML = o9;
 }
 
 document.querySelector(".b-9").onclick = t9;
@@ -201,11 +197,11 @@ document.querySelector(".b-9").onclick = t9;
 function t10() {
   let o10 = "";
   let k = 1950;
-  while (k <= 1966){
-     o10 += k + "_";
-     k = k + 2;
+  while (k <= 1966) {
+    o10 += k + "_";
+    k = k + 2;
   }
-  document.querySelector('.out-10').innerHTML = o10
+  document.querySelector(".out-10").innerHTML = o10;
 }
 
 document.querySelector(".b-10").onclick = t10;
@@ -219,17 +215,16 @@ document.querySelector(".b-10").onclick = t10;
 //     one_3_4_two_
 
 function t11() {
-  let div = document.querySelectorAll('.div-11')
+  let div = document.querySelectorAll(".div-11");
   let o11 = "";
-  let k = 0
-  
+  let k = 0;
+
   while (k < div.length) {
-    console.log(k)
-    o11 += div[k]. textContent + "_";
-    k++
-    
+    console.log(k);
+    o11 += div[k].textContent + "_";
+    k++;
   }
-  document.querySelector('.out-11').innerHTML = o11
+  document.querySelector(".out-11").innerHTML = o11;
 }
 
 document.querySelector(".b-11").onclick = t11;
@@ -240,7 +235,16 @@ document.querySelector(".b-11").onclick = t11;
 // перебрать их с помощью цикла  while. Обращение к div выглядит так elem[i]
 // применить к каждому elem[i].style.background = 'orange'
 
-function t12() {}
+function t12() {
+  let elem = document.querySelectorAll(".div-12");
+
+  let k = 0;
+
+  while (k < elem.length) {
+    elem[k].style.background = "orange";
+    k++;
+  }
+}
 
 document.querySelector(".b-12").onclick = t12;
 
