@@ -5,8 +5,14 @@
 
 
 function t1() {
-
+let o = '';
+let k = 0 
+while (k < 50){
+    k++;
+    o += k + "_"
 }
+document.querySelector('.out-1').innerHTML = o
+    }
 
 document.querySelector('.b-1').onclick = t1;
 
@@ -16,7 +22,13 @@ document.querySelector('.b-1').onclick = t1;
 // от 2 до 46 c шагом 2. Разделитель - нижнее подчеркивание. Задача решается с помощью цикла  while.
 
 function t2() {
-
+o2 = "";
+let k = 0;
+while ( k <= 44){
+    k = k + 2;
+    o2 += k + "_";
+}
+document.querySelector('.out-2').innerHTML = o2
 }
 
 document.querySelector('.b-2').onclick = t2;
