@@ -169,7 +169,28 @@ document.querySelector(".b-8").onclick = t8;
 // 6_7_8_
 // Задача решается с помощью цикла. Подсказка - вначале делаем проверку и при необходимости поменять местами значения в переменных местами, а потом запускаем цикл  while.
 
-function t9() {}
+function t9() {
+    let o9 = "";
+    let i1 = document.querySelector('.i-91').value;
+    let i2 = document.querySelector('.i-92').value;
+     let k = i1;
+     let s = i2;
+
+    if (k < s){
+      while (k <= s){
+          o9 += k + "_";
+          k++;
+          
+      }
+    }else{
+        while(s <= k){
+            o9 += s + "_";
+            s++;
+            
+        }
+    }
+    document.querySelector('.out-9').innerHTML = o9
+}
 
 document.querySelector(".b-9").onclick = t9;
 
@@ -177,7 +198,15 @@ document.querySelector(".b-9").onclick = t9;
 // Кнопка .b-10 запускает функцию t10. Функция должна выводить в .out-10 четные годы от 1950 до 1966 включительно.
 // Разделитель знак подчеркивания. Задача решается через цикл, а четность - через шаг (равный 2).
 
-function t10() {}
+function t10() {
+  let o10 = "";
+  let k = 1950;
+  while (k <= 1966){
+     o10 += k + "_";
+     k = k + 2;
+  }
+  document.querySelector('.out-10').innerHTML = o10
+}
 
 document.querySelector(".b-10").onclick = t10;
 
