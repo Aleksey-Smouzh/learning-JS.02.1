@@ -146,7 +146,17 @@ document.querySelector(".b-7").onclick = t7;
 //     4_5_6_7_8_
 // Задача решается с помощью цикла  while.
 
-function t8() {}
+function t8() {
+    let o8 = "";
+    let i1 = document.querySelector(".i-81").value;
+    let i2 = document.querySelector('.i-82').value;
+    
+    while(i1 <= i2){
+         o8 += i1 + "_"
+         i1++
+    }
+    document.querySelector('.out-8').innerHTML = o8
+}
 
 document.querySelector(".b-8").onclick = t8;
 
