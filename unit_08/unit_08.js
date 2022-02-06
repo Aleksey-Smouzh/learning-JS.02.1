@@ -254,7 +254,16 @@ document.querySelector(".b-12").onclick = t12;
 // перебрать их с помощью цикла  while. Обращение к элементу выглядит так elem[i]
 // применить к каждому elem[i].value, причем к value первого должно равняться 1, второго - 2, третьего - 3...
 
-function t13() {}
+function t13() {
+  let elem = document.querySelectorAll(".i-13");
+  let i = 0;
+  o13 = "";
+  while (i < elem.length) {
+    o13 += elem[i].value = i + 1;
+    i++;
+  }
+  document.querySelector(".out-13").textContent = o13;
+}
 
 document.querySelector(".b-13").onclick = t13;
 
@@ -264,7 +273,20 @@ document.querySelector(".b-13").onclick = t13;
 // перебрать их с помощью цикла  while. Обращение к элементу выглядит так elem[i]
 // вывести в .out-14 value выбранного. Проверить выбран ли элемент можно с помощью elem[i].checked.
 
-function t14() {}
+function t14() {
+  let i14 = document.querySelectorAll(".i-14");
+  console.log(i14);
+  let o14 = "";
+  let i = 0;
+  while (i < i14.length) {
+    if (i14[i].checked) {
+      o14 += i14[i].value;
+    }
+
+    i++;
+  }
+  document.querySelector(".out-14").textContent = o14;
+}
 
 document.querySelector(".b-14").onclick = t14;
 
@@ -273,6 +295,23 @@ document.querySelector(".b-14").onclick = t14;
 // 77_88_99_77_88_99_77_88_99_
 // Для вывода использовать цикл  while. Разделитель подчеркивание.
 
-function t15() {}
+function t15() {
+  let o15 = "";
+  
+  let k = 0;
+  while (k < 3) {
+    console.log(k);
+    let i = 77;
+    while (i <= 99) {
+      console.log(i);
+      o15 += i + "_";
+      i = i + 11;
+    }
+
+    k++;
+  }
+
+  document.querySelector(".out-15").innerHTML = o15;
+}
 
 document.querySelector(".b-15").onclick = t15;
