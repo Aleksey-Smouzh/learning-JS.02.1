@@ -208,7 +208,12 @@ document.querySelector(".b-16").onclick = f16;
 //  Task 17
 // Кнопкa .b-17, которая запускает функцию f17. Функция создает через createElement div c текстом 17 и добавляет ему класс .bg-orange. Созданный div заменяет .out-17 с помощью replaceWith.
 
-function f17() {}
+function f17() {
+    let a = document.createElement('div');
+    a.classList.add('bg-orange');
+    a.innerHTML = 17;
+    document.querySelector('.out-17').replaceWith(a)
+}
 
 document.querySelector(".b-17").onclick = f17;
 
