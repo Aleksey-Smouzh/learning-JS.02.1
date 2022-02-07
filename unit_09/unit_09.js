@@ -87,13 +87,13 @@ document.querySelector(".b-7").onclick = f7;
 let blocks8 = document.querySelectorAll(".out-8");
 
 function f8() {
-    let b = document.querySelectorAll('.out-8')
-    let k = 0;
-    while(k < b.length){
-        b[k].classList.toggle("bg-orange");
-        k++;
-    }
-   
+  let b = document.querySelectorAll(".out-8");
+  let k = 0;
+  while (k < b.length) {
+    b[k].classList.toggle("bg-orange");
+    k++;
+  }
+
   //внутри цикла blocks8[i].classList....
 }
 
@@ -103,7 +103,7 @@ document.querySelector(".b-8").onclick = f8;
 // Усложним предыдущие задачи. С помощью цикла повесим на блоки .out-9 событие клик. По клику должна выполняться функция f9. Функция, должна добавлять класс .bg-orange тому .out-9 на котором кликнули.
 
 function f9() {
-  this.classList.add('bg-orange')//this.classList...  // все решается одной строкой
+  this.classList.add("bg-orange"); //this.classList...  // все решается одной строкой
 }
 
 let div9 = document.querySelectorAll(".out-9");
@@ -118,20 +118,24 @@ for (let i = 0; i < div9.length; i++) {
 //let div10 = тут получите все out-10
 
 function f10() {
-    this.classList.toggle('bg-orange')
+  this.classList.toggle("bg-orange");
 }
 let div10 = document.querySelectorAll(".out-10");
 let k = 0;
-while (k < div10.length){
-div10[k].onclick = f10
-k++
+while (k < div10.length) {
+  div10[k].onclick = f10;
+  k++;
 }
 // а тут цикл, похожий на предыдущее задание
 
 //  Task 11
 // Кнопка .b-11, запускает функцию f11. Функция создает через createElement div c текстом 25 и добавляет его через append в .out-11.
 
-function f11() {}
+function f11() {
+  let a = document.createElement("div");
+  a.innerHTML = "25";
+  document.querySelector(".out-11").appendChild(a);
+}
 
 document.querySelector(".b-11").onclick = f11;
 
