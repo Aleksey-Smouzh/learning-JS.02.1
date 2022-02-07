@@ -117,8 +117,15 @@ for (let i = 0; i < div9.length; i++) {
 
 //let div10 = тут получите все out-10
 
-function f10() {}
-
+function f10() {
+    this.classList.toggle('bg-orange')
+}
+let div10 = document.querySelectorAll(".out-10");
+let k = 0;
+while (k < div10.length){
+div10[k].onclick = f10
+k++
+}
 // а тут цикл, похожий на предыдущее задание
 
 //  Task 11
