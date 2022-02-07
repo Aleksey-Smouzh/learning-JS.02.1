@@ -233,7 +233,6 @@ document.querySelector(".b-18").onclick = f18;
 
 function f19() {
   let a = document.querySelectorAll(".p-19");
-  console.log(a);
 
   let b = "";
   for (let i = 0; i < a.length; i++) {
@@ -248,6 +247,10 @@ document.querySelector(".b-19").onclick = f19;
 //  Task 20
 // Кнопкa .b-20, которая запускает функцию f20. Функция с помощью setAttribute присваивает атрибут title="go" в div.out-20. Обращаю ваше внимание - увидеть атрибут можно только в с помощью инструментов веб разработчика.
 
-function f20() {}
+function f20() {
+    let a = document.querySelector('.out-20')
+    a.setAttribute('title', 'go');
+
+}
 
 document.querySelector(".b-20").onclick = f20;
