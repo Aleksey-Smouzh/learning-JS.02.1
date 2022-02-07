@@ -220,7 +220,12 @@ document.querySelector(".b-17").onclick = f17;
 //  Task 18
 // Кнопкa .b-18, которая запускает функцию f18. Функция с помощью getAttribute получает data-b атрибут с параграф .p-18 и выводит в .out-18.
 
-function f18() {}
+function f18() {
+    let a = document.querySelector('.p-18')
+   
+    
+    document.querySelector('.out-18').innerHTML =  a.getAttribute('data-b')
+}
 
 document.querySelector(".b-18").onclick = f18;
 
