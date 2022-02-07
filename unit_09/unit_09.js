@@ -23,8 +23,8 @@ document.querySelector(".b-2").onclick = f2;
 // По нажатию кнопки .b-3 запускайте функцию f3, которая удаляет у блока .out-3 класс .bg-orange.
 
 function f3() {
-    let a = document.querySelector('.out-3')
-    a.classList.remove('bg-orange')
+  let a = document.querySelector(".out-3");
+  a.classList.remove("bg-orange");
 }
 
 document.querySelector(".b-3").onclick = f3;
@@ -33,8 +33,8 @@ document.querySelector(".b-3").onclick = f3;
 // По нажатию кнопки .b-4 запускайте функцию f4, которая делает toggle класса .bg-orange для блока out-4.
 
 function f4() {
-    let a = document.querySelector('.out-4')
-   a.classList.toggle('bg-orange')
+  let a = document.querySelector(".out-4");
+  a.classList.toggle("bg-orange");
 }
 
 document.querySelector(".b-4").onclick = f4;
@@ -43,11 +43,11 @@ document.querySelector(".b-4").onclick = f4;
 // По нажатию .b-5 запускайте функцию f5, которая проверяет наличие класса .bg-orange у блока .out-4 (да, именно у out-4 ). Результат - true или false, выводите в .out-5.
 
 function f5() {
-    let a = document.querySelector(".out-4");
-    let b = document.querySelector('.out-5');
-    let a2 = a.classList.contains('bg-orange')
-    
-    b.innerHTML = a2
+  let a = document.querySelector(".out-4");
+  let b = document.querySelector(".out-5");
+  let a2 = a.classList.contains("bg-orange");
+
+  b.innerHTML = a2;
 }
 
 document.querySelector(".b-5").onclick = f5;
@@ -55,7 +55,12 @@ document.querySelector(".b-5").onclick = f5;
 //  Task 6
 // По нажатию .b-6 запускайте функцию f6, которая выводит в .out-6 количество параграфов с классом .p-6.
 
-function f6() {}
+function f6() {
+  let a = document.querySelector(".out-6");
+  let b = document.querySelectorAll(".p-6");
+
+  a.textContent = b.length;
+}
 
 document.querySelector(".b-6").onclick = f6;
 
@@ -65,6 +70,12 @@ document.querySelector(".b-6").onclick = f6;
 let blocks7 = document.querySelectorAll(".out-7");
 
 function f7() {
+  let b = document.querySelectorAll(".out-7");
+  let k = 0;
+  while (k < b.length) {
+    b[k].classList.add("bg-orange");
+    k++;
+  }
   //внутри цикла blocks7[i].classList....
 }
 
