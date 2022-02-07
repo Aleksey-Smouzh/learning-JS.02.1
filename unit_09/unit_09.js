@@ -3,7 +3,9 @@
 
 
 function f1() {
-
+let a = document.querySelector('.out-1');
+a.style.width = "200px";
+a.style.height = '90px';
 }
 
 document.querySelector('.b-1').onclick = f1;
