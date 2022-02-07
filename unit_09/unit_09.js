@@ -196,7 +196,12 @@ document.querySelector(".b-15").onclick = f15;
 //  Task 16
 // Кнопкa .b-16, которая запускает функцию f16. Функция создает через createElement div c текстом 16 и добавляет ему класс .bg-orange. Созданный div добавляется после .out-16 с помощью after.
 
-function f16() {}
+function f16() {
+    let a = document.createElement('div');
+    a.innerText = 16;
+    a.classList.add('bg-orange');
+    document.querySelector('.out-16').after(a)
+}
 
 document.querySelector(".b-16").onclick = f16;
 
