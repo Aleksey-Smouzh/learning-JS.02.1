@@ -157,14 +157,12 @@ document.querySelector(".b-12").onclick = f12;
 // Кнопка .b-13, запускает функцию f13. Функция создает через createElement div c текстом pushMe и добавляет ему класс bg-orange. Также, созданному div добавляется событие onclick, по которому выполняется функция f13_1. Созданный div добавляется в .out-13.
 
 function f13() {
-    let a = document.createElement('div');
-    a.innerHTML = "pushMe";
-    a.classList.add('bg-orange')
-    a.onclick = f13_1
-     let b = document.querySelector('.out-13').appendChild(a); 
-     console.log(b)
+  let a = document.createElement("div");
+  a.innerHTML = "pushMe";
+  a.classList.add("bg-orange");
+  a.onclick = f13_1;
+  document.querySelector(".out-13").appendChild(a);
 }
-
 
 function f13_1() {
   document.querySelector(".out-13-1").innerHTML += this.innerHTML;
@@ -175,7 +173,12 @@ document.querySelector(".b-13").onclick = f13;
 //  Task 14
 // Кнопка .b-14, запускает функцию f14. Функция создает через createElement div c текстом 14 и добавляет ему класс .bg-orange. Созданный div добавляется в .out-14 с помощью append.
 
-function f14() {}
+function f14() {
+  let a = document.createElement("div");
+  a.classList.add("bg-orange");
+  a.textContent = "14";
+  document.querySelector(".out-14").append(a);
+}
 
 document.querySelector(".b-14").onclick = f14;
 
