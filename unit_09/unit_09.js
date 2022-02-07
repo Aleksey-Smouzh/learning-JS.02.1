@@ -87,6 +87,13 @@ document.querySelector(".b-7").onclick = f7;
 let blocks8 = document.querySelectorAll(".out-8");
 
 function f8() {
+    let b = document.querySelectorAll('.out-8')
+    let k = 0;
+    while(k < b.length){
+        b[k].classList.toggle("bg-orange");
+        k++;
+    }
+   
   //внутри цикла blocks8[i].classList....
 }
 
@@ -96,7 +103,7 @@ document.querySelector(".b-8").onclick = f8;
 // Усложним предыдущие задачи. С помощью цикла повесим на блоки .out-9 событие клик. По клику должна выполняться функция f9. Функция, должна добавлять класс .bg-orange тому .out-9 на котором кликнули.
 
 function f9() {
-  //this.classList...  // все решается одной строкой
+  this.classList.add('bg-orange')//this.classList...  // все решается одной строкой
 }
 
 let div9 = document.querySelectorAll(".out-9");
