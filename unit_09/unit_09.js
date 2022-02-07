@@ -197,10 +197,10 @@ document.querySelector(".b-15").onclick = f15;
 // Кнопкa .b-16, которая запускает функцию f16. Функция создает через createElement div c текстом 16 и добавляет ему класс .bg-orange. Созданный div добавляется после .out-16 с помощью after.
 
 function f16() {
-    let a = document.createElement('div');
-    a.innerText = 16;
-    a.classList.add('bg-orange');
-    document.querySelector('.out-16').after(a)
+  let a = document.createElement("div");
+  a.innerText = 16;
+  a.classList.add("bg-orange");
+  document.querySelector(".out-16").after(a);
 }
 
 document.querySelector(".b-16").onclick = f16;
@@ -209,10 +209,10 @@ document.querySelector(".b-16").onclick = f16;
 // Кнопкa .b-17, которая запускает функцию f17. Функция создает через createElement div c текстом 17 и добавляет ему класс .bg-orange. Созданный div заменяет .out-17 с помощью replaceWith.
 
 function f17() {
-    let a = document.createElement('div');
-    a.classList.add('bg-orange');
-    a.innerHTML = 17;
-    document.querySelector('.out-17').replaceWith(a)
+  let a = document.createElement("div");
+  a.classList.add("bg-orange");
+  a.innerHTML = 17;
+  document.querySelector(".out-17").replaceWith(a);
 }
 
 document.querySelector(".b-17").onclick = f17;
@@ -221,10 +221,9 @@ document.querySelector(".b-17").onclick = f17;
 // Кнопкa .b-18, которая запускает функцию f18. Функция с помощью getAttribute получает data-b атрибут с параграф .p-18 и выводит в .out-18.
 
 function f18() {
-    let a = document.querySelector('.p-18')
-   
-    
-    document.querySelector('.out-18').innerHTML =  a.getAttribute('data-b')
+  let a = document.querySelector(".p-18");
+
+  document.querySelector(".out-18").innerHTML = a.getAttribute("data-b");
 }
 
 document.querySelector(".b-18").onclick = f18;
@@ -232,7 +231,17 @@ document.querySelector(".b-18").onclick = f18;
 //  Task 19
 // Кнопкa .b-19, которая запускает функцию f19. Функция с помощью getAttribute получает data-b атрибут с параграфов p-19 и выводит в .out-19 через пробел. Обратите внимание, что элементов .p-19 больше одного.
 
-function f19() {}
+function f19() {
+  let a = document.querySelectorAll(".p-19");
+  console.log(a);
+
+  let b = "";
+  for (let i = 0; i < a.length; i++) {
+    b += a[i].getAttribute("data-b") + " ";
+  }
+
+  document.querySelector(".out-19").innerHTML = b;
+}
 
 document.querySelector(".b-19").onclick = f19;
 
