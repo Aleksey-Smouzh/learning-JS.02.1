@@ -81,9 +81,17 @@ document.querySelector(".b-5").onclick = f5;
 // Вывод - по нажатию кнопки b-6
 // Вывод в out-6
 
-// let ar6 =
+ let ar6 = ["Aleks", "Smouzh", 25, 8]
 
-function f6() {}
+function f6() {
+    let k = 0;
+    let o = "";
+    while(k < ar6.length){
+       o+=ar6[k] + " "; 
+        k++;
+    }
+document.querySelector('.out-6').innerHTML = o
+}
 
 document.querySelector(".b-6").onclick = f6;
 
@@ -95,7 +103,19 @@ document.querySelector(".b-6").onclick = f6;
 
 let ar7 = ["china", "india", "brazil", "japan", "egypt"];
 
-function f7() {}
+function f7() {
+    //ar7.push('italy', 'turkey', 'vietnam' )
+ ar7[5] = 'italy';
+ ar7[6] = 'turkey';
+ ar7[7] = 'vietnam'
+
+    let b = '';
+    for(let i = 0; i < ar7.length; i++){
+    b += ar7[i] + " "
+      
+    } 
+    document.querySelector('.out-7').innerHTML = b; 
+}
 
 document.querySelector(".b-7").onclick = f7;
 
