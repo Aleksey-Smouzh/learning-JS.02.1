@@ -49,7 +49,7 @@ document.querySelector(".b-3").onclick = f3;
 let ar4 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]; // переменную обьявляем эту здесь!!!!
 
 function f4() {
-  for (let i; i < ar4.length; i++) {}
+  for (let i = 0; i < ar4.length; i++) {}
   document.querySelector(".out-4").innerHTML =
     ar4[0] + " " + ar4[3] + " " + ar4[8];
 }
@@ -63,9 +63,15 @@ document.querySelector(".b-4").onclick = f4;
 // Вывод в out-5
 // Тест допустим массив [1,2,3,4,5,6,7,8,9,10] вывод: 8
 
-// let ar5 =
+let ar5 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-function f5() {}
+function f5() {
+  let sum = 0;
+  for (let i = 0; i < ar5.length; i++) {
+    sum = ar5[0] + ar5[2] + ar5[3];
+  }
+  document.querySelector(".out-5").innerHTML = sum;
+}
 
 document.querySelector(".b-5").onclick = f5;
 
