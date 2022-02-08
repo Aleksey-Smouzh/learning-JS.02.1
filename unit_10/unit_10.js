@@ -296,27 +296,26 @@ let ar16_odd = [];
 let ar16_even = [];
 
 function f16() {
-    ar16_odd = [];
-    ar16_even = [];
-    let a = "";
-    let b = "";
-    for(let i = 0; i < ar16.length; i++){
-        if (ar16[i] % 2 == 0 ){
-            ar16_even[ar16_even.length] = ar16[i]   
-        } else {
-            ar16_odd[ar16_odd.length] = ar16[i]
-        }
-
+  ar16_odd = [];
+  ar16_even = [];
+  let a = "";
+  let b = "";
+  for (let i = 0; i < ar16.length; i++) {
+    if (ar16[i] % 2 == 0) {
+      ar16_even[ar16_even.length] = ar16[i];
+    } else {
+      ar16_odd[ar16_odd.length] = ar16[i];
     }
-       for (let i = 0; i < ar16_even.length; i++){
-        a += ar16_even[i] + " ";
-       }
-       for (let i = 0; i < ar16_odd.length; i++){
-        b += ar16_odd[i] + " ";
-       }
-    
-    document.querySelector('.out-16-even').innerHTML = a
-    document.querySelector('.out-16-odd').innerHTML = b
+  }
+  for (let i = 0; i < ar16_even.length; i++) {
+    a += ar16_even[i] + " ";
+  }
+  for (let i = 0; i < ar16_odd.length; i++) {
+    b += ar16_odd[i] + " ";
+  }
+
+  document.querySelector(".out-16-even").innerHTML = a;
+  document.querySelector(".out-16-odd").innerHTML = b;
 }
 
 document.querySelector(".b-16").onclick = f16;
@@ -329,7 +328,16 @@ document.querySelector(".b-16").onclick = f16;
 
 let ar17 = [3, 0, 2, 6, 0, 1, 3, 1, 9, 0, 2, 0];
 
-function f17() {}
+function f17() {
+  let q = "";
+  for (let i = 0; i < ar17.length; i++) {
+    if (ar17[i] > 3) {
+      console.log(ar17[i]);
+      q += ar17[i] + " ";
+    }
+  }
+  document.querySelector(".out-17").innerHTML = q;
+}
 
 document.querySelector(".b-17").onclick = f17;
 
@@ -341,7 +349,17 @@ document.querySelector(".b-17").onclick = f17;
 
 let ar18 = [15, 24, 13, 78, 21, 4, 45, 67];
 
-function f18() {}
+function f18() {
+  let f = "";
+  let max = ar18[0];
+  for (let i = 0; i < ar18.length; i++) {
+    if (ar18[i] > max) {
+      max = ar18[i];
+    }
+    f = max;
+  }
+  document.querySelector(".out-18").innerHTML = f;
+}
 
 document.querySelector(".b-18").onclick = f18;
 
