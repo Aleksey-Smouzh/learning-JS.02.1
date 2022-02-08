@@ -170,7 +170,13 @@ document.querySelector(".b-9").onclick = f9;
 
 let ar10 = [100, 200, 300, 400, 700, 121];
 
-function f10() {}
+function f10() {
+    let e = "";
+   for(let i = 0; i < ar10.length; i++){
+     e = ar10[1] + ar10[i]
+   }
+   document.querySelector('.out-10').innerHTML = e
+}
 
 document.querySelector(".b-10").onclick = f10;
 
