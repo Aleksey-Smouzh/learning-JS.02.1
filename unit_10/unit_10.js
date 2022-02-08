@@ -81,16 +81,16 @@ document.querySelector(".b-5").onclick = f5;
 // Вывод - по нажатию кнопки b-6
 // Вывод в out-6
 
- let ar6 = ["Aleks", "Smouzh", 25, 8]
+let ar6 = ["Aleks", "Smouzh", 25, 8];
 
 function f6() {
-    let k = 0;
-    let o = "";
-    while(k < ar6.length){
-       o+=ar6[k] + " "; 
-        k++;
-    }
-document.querySelector('.out-6').innerHTML = o
+  let k = 0;
+  let o = "";
+  while (k < ar6.length) {
+    o += ar6[k] + " ";
+    k++;
+  }
+  document.querySelector(".out-6").innerHTML = o;
 }
 
 document.querySelector(".b-6").onclick = f6;
@@ -104,17 +104,16 @@ document.querySelector(".b-6").onclick = f6;
 let ar7 = ["china", "india", "brazil", "japan", "egypt"];
 
 function f7() {
-    //ar7.push('italy', 'turkey', 'vietnam' )
- ar7[5] = 'italy';
- ar7[6] = 'turkey';
- ar7[7] = 'vietnam'
+  //ar7.push('italy', 'turkey', 'vietnam' )
+  ar7[5] = "italy";
+  ar7[6] = "turkey";
+  ar7[7] = "vietnam";
 
-    let b = '';
-    for(let i = 0; i < ar7.length; i++){
-    b += ar7[i] + " "
-      
-    } 
-    document.querySelector('.out-7').innerHTML = b; 
+  let b = "";
+  for (let i = 0; i < ar7.length; i++) {
+    b += ar7[i] + " ";
+  }
+  document.querySelector(".out-7").innerHTML = b;
 }
 
 document.querySelector(".b-7").onclick = f7;
@@ -128,7 +127,17 @@ document.querySelector(".b-7").onclick = f7;
 
 let ar8 = [];
 
-function f8() {}
+function f8() {
+  ar8[3] = 3.14;
+  ar8[4] = 17;
+  ar8[6] = 5;
+
+  let b = "";
+  for (let i = 0; i < ar8.length; i++) {
+    b += ar8[i] + "-";
+  }
+  document.querySelector(".out-8").innerHTML = b.slice(0, b.length - 1);
+}
 
 document.querySelector(".b-8").onclick = f8;
 
