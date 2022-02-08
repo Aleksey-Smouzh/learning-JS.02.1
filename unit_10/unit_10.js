@@ -295,7 +295,29 @@ let ar16 = [0, 2, 5, -4, 6, 22, -9, -12, 8, 12, 13, 78];
 let ar16_odd = [];
 let ar16_even = [];
 
-function f16() {}
+function f16() {
+    ar16_odd = [];
+    ar16_even = [];
+    let a = "";
+    let b = "";
+    for(let i = 0; i < ar16.length; i++){
+        if (ar16[i] % 2 == 0 ){
+            ar16_even[ar16_even.length] = ar16[i]   
+        } else {
+            ar16_odd[ar16_odd.length] = ar16[i]
+        }
+
+    }
+       for (let i = 0; i < ar16_even.length; i++){
+        a += ar16_even[i] + " ";
+       }
+       for (let i = 0; i < ar16_odd.length; i++){
+        b += ar16_odd[i] + " ";
+       }
+    
+    document.querySelector('.out-16-even').innerHTML = a
+    document.querySelector('.out-16-odd').innerHTML = b
+}
 
 document.querySelector(".b-16").onclick = f16;
 
