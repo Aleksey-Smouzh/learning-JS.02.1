@@ -211,12 +211,12 @@ document.querySelector(".b-11").onclick = f11;
 let ar12 = ["test", "west", "list", "class", "best"];
 
 function f12() {
-ar12[0] = ar12[4]
-let z = "";
-for( let i = 0; i< ar12.length; i++){
-   z += ar12[i] + " ";
-}
-document.querySelector('.out-12').innerHTML = z
+  ar12[0] = ar12[4];
+  let z = "";
+  for (let i = 0; i < ar12.length; i++) {
+    z += ar12[i] + " ";
+  }
+  document.querySelector(".out-12").innerHTML = z;
 }
 
 document.querySelector(".b-12").onclick = f12;
@@ -232,7 +232,13 @@ document.querySelector(".b-12").onclick = f12;
 let ar13 = ["test", "west", "list", "class", "best"];
 
 function f13() {
-   
+  let p = "";
+  for (let i = 0; i < ar13.length; i++) {
+    p += ar13[i] + " " + i + " ";
+
+    console.log(ar13);
+  }
+  document.querySelector(".out-13").innerHTML = p;
 }
 
 document.querySelector(".b-13").onclick = f13;
