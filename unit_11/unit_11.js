@@ -287,14 +287,13 @@ let d171 = ["a", "b", "c", "d"];
 let d172 = [1, 2, 3, 4, 5];
 
 function f17() {
-d17 =[];
-for(let i = 0; i < d171.length; i++){
+  d17 = [];
+  for (let i = 0; i < d171.length; i++) {
     d17.push(d171[i]);
-    
-}
-for(let i =0; i < d172.length; i++){
+  }
+  for (let i = 0; i < d172.length; i++) {
     d17.push(d172[i]);
-}
+  }
 
   showArr(".out-17", d17);
 }
@@ -309,7 +308,11 @@ document.querySelector(".b-17").onclick = f17;
 
 let d18 = ["b", "c", "45", "e", "z", "y"];
 
-function f18() {}
+function f18() {
+  let m = document.querySelector(".i-18").value;
+  let a = d18.includes(m);
+  document.querySelector(".out-18").innerHTML = a;
+}
 
 document.querySelector(".b-18").onclick = f18;
 
