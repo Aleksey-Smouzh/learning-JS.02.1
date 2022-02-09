@@ -48,6 +48,8 @@ document.querySelector(".b-3").onclick = f3;
 // функция выполняется при нажатии кнопки b-4
 
 function f4() {
+  let r = document.querySelector(".i-4").value;
+  d1.push(r);
   showArr(".out-4", d1);
 }
 
@@ -58,6 +60,8 @@ document.querySelector(".b-4").onclick = f4;
 // функция выполняется при нажатии кнопки b-5
 
 function f5() {
+  let y = document.querySelector(".i-5").value;
+  d1.unshift(y);
   showArr(".out-5", d1);
 }
 
