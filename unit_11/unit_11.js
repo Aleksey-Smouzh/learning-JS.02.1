@@ -26,6 +26,7 @@ document.querySelector(".b-1").onclick = f1;
 // функция выполняется при нажатии кнопки b-2
 
 function f2() {
+    d1.pop()
   showArr(".out-2", d1);
 }
 
