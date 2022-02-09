@@ -287,6 +287,15 @@ let d171 = ["a", "b", "c", "d"];
 let d172 = [1, 2, 3, 4, 5];
 
 function f17() {
+d17 =[];
+for(let i = 0; i < d171.length; i++){
+    d17.push(d171[i]);
+    
+}
+for(let i =0; i < d172.length; i++){
+    d17.push(d172[i]);
+}
+
   showArr(".out-17", d17);
 }
 
