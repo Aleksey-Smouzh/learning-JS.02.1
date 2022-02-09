@@ -336,7 +336,18 @@ let d19 = [
 ];
 let maxString = "";
 
-function f19() {}
+function f19() {
+let s = d19[0]
+for(let i = 0; i < d19.length; i++){
+if (d19.length > s.length){
+    s = d19[i]
+}
+maxString = s
+}
+console.log(s)
+document.querySelector('.out-19').innerHTML = maxString
+
+}
 
 document.querySelector(".b-19").onclick = f19;
 
