@@ -183,7 +183,16 @@ document.querySelector(".b-11").onclick = f11;
 
 let d12 = [6, 62, 60, 70, 1, 5];
 
-function f12() {}
+function f12() {
+  let r = document.querySelector(".i-12").value;
+  let res = -1;
+  for (let i = 0; i < d12.length; i++) {
+    if (r == d12[i]) {
+      res = i;
+    }
+  }
+  document.querySelector(".out-12").innerHTML = res;
+}
 
 document.querySelector(".b-12").onclick = f12;
 
