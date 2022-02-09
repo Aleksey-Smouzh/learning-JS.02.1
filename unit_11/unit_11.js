@@ -76,6 +76,8 @@ document.querySelector(".b-5").onclick = f5;
 let d6 = ["test", 5, 12];
 
 function f6() {
+  let u = document.querySelector(".i-6").value;
+  d6[d6.length] = u;
   showArr(".out-6", d6);
 }
 
