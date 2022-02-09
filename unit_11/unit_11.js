@@ -247,6 +247,15 @@ document.querySelector(".b-14").onclick = f14;
 let d15 = [0, 2, 5, -4, 6, 22, -9, -12, 8, 12, 13, 78];
 
 function f15() {
+  let d15a = [];
+  let s = +document.querySelector(".i-15").value;
+  let p = d15.indexOf(s);
+  if (p == -1) {
+    d15.push(s);
+  }
+
+  console.log(p);
+
   showArr(".out-15", d15);
 }
 
