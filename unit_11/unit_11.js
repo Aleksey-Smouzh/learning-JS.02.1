@@ -254,8 +254,6 @@ function f15() {
     d15.push(s);
   }
 
-  console.log(p);
-
   showArr(".out-15", d15);
 }
 
@@ -272,6 +270,7 @@ let d161 = [5, 6, 7, 8, 9];
 let d162 = [23, 24, 56, 87];
 
 function f16() {
+  d16 = d161.concat(d162);
   showArr(".out-16", d16);
 }
 
