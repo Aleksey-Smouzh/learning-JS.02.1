@@ -261,10 +261,10 @@ function f13() {
       } else {
         t.push(0);
       }
-       p++;
+      p++;
     }
     a13.push(t);
-     p++;
+    p++;
   }
   console.log(a13);
 }
@@ -277,7 +277,15 @@ document.querySelector(".b-13").onclick = f13;
 
 let a14 = [[], [1, 0], [1, 0, 0, 0], [3, 4, 5, 6, 7, 8], [1, 2]];
 
-function f14() {}
+function f14() {
+  let out = "";
+  console.log(a14);
+  for (let i = 0; i < a14.length; i++) {
+    for (let k = 0; k <= a14[i].length; k++) {}
+    out += a14[i].length + " ";
+  }
+  document.querySelector(".out-14").innerHTML = out;
+}
 
 document.querySelector(".b-14").onclick = f14;
 
