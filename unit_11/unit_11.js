@@ -337,16 +337,15 @@ let d19 = [
 let maxString = "";
 
 function f19() {
-let s = d19[0]
-for(let i = 0; i < d19.length; i++){
-if (d19.length > s.length){
-    s = d19[i]
-}
-maxString = s
-}
-console.log(s)
-document.querySelector('.out-19').innerHTML = maxString
+  let s = d19[0];
+  for (let i = 0; i < d19.length; i++) {
+    if (d19.length > s.length) {
+      s = d19[i];
+    }
+    maxString = s;
+  }
 
+  document.querySelector(".out-19").innerHTML = maxString;
 }
 
 document.querySelector(".b-19").onclick = f19;
@@ -359,6 +358,8 @@ document.querySelector(".b-19").onclick = f19;
 
 let d20 = [4, 5, 6, 7, 8, 9, 10];
 
-function f20() {}
+function f20() {
+  document.querySelector(".out-20").innerHTML = d20.join('');
+}
 
 document.querySelector(".b-20").onclick = f20;
