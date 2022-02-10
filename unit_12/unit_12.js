@@ -67,6 +67,7 @@ function f5() {
     [21, 34],
     [44, 56],
   ];
+ 
   for (let i = 0; i < a5.length; i++) {
     if (a5[i][0] % 2 == 0) out += a5[i][0] + " ";
     if (a5[i][1] % 2 == 0) out += a5[i][1] + " ";
@@ -88,6 +89,11 @@ function f6() {
     [21, 34],
     [44, 56],
   ];
+  for(let i= 0; i < a6.length; i++){
+      if (a6[i][0] % 2 !== 0) out += a6[i][0] + " ";
+      if (a6[i][1] % 2 !== 0) out += a6[i][1] + ' ';
+  }
+  document.querySelector('.out-6').innerHTML = out
 }
 
 document.querySelector(".b-6").onclick = f6;
