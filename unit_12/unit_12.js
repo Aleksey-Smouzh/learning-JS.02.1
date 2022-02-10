@@ -295,7 +295,18 @@ document.querySelector(".b-14").onclick = f14;
 
 let a15 = [[], [1, 0], [1, 0, 0, 0], [3, 4, 5, 6, 7, 8], [1, 2]];
 
-function f15() {}
+function f15() {
+  console.log(a15);
+  let out = "";
+  let max = a15[0];
+  for (let i = 0; i < a15.length; i++) {
+    if (max.length < a15[i].length) {
+      max = a15[i];
+    }
+    out = max.length;
+  }
+  document.querySelector(".out-15").innerHTML = out;
+}
 
 document.querySelector(".b-15").onclick = f15;
 
