@@ -89,6 +89,7 @@ function f6() {
     [21, 34],
     [44, 56],
   ];
+  
   for(let i= 0; i < a6.length; i++){
       if (a6[i][0] % 2 !== 0) out += a6[i][0] + " ";
       if (a6[i][1] % 2 !== 0) out += a6[i][1] + ' ';
@@ -110,6 +111,7 @@ function f7() {
     [21, 34, 43],
     [44, 56],
   ];
+  
   for (let i = 0; i < a7.length; i++) {
     for (let k = 0; k < a7[i].length; k++) {
       if (a7[i][k] % 2 == 0) out += a7[i][k] + " ";
@@ -132,6 +134,15 @@ function f8() {
     [21, 34, 43],
     [44, 56],
   ];
+console.log(a8)
+for(let i = 0; i < a8.length; i++){
+    for (let k = 0; k < a8[i].length; k++){
+     if (a8[i][k] % 2 !== 0){
+         out += a8[i][k] + " "; 
+     }
+    }
+}
+document.querySelector('.out-8').innerHTML = out
 }
 
 document.querySelector(".b-8").onclick = f8;
