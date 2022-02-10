@@ -67,7 +67,7 @@ function f5() {
     [21, 34],
     [44, 56],
   ];
- 
+
   for (let i = 0; i < a5.length; i++) {
     if (a5[i][0] % 2 == 0) out += a5[i][0] + " ";
     if (a5[i][1] % 2 == 0) out += a5[i][1] + " ";
@@ -89,12 +89,12 @@ function f6() {
     [21, 34],
     [44, 56],
   ];
-  
-  for(let i= 0; i < a6.length; i++){
-      if (a6[i][0] % 2 !== 0) out += a6[i][0] + " ";
-      if (a6[i][1] % 2 !== 0) out += a6[i][1] + ' ';
+
+  for (let i = 0; i < a6.length; i++) {
+    if (a6[i][0] % 2 !== 0) out += a6[i][0] + " ";
+    if (a6[i][1] % 2 !== 0) out += a6[i][1] + " ";
   }
-  document.querySelector('.out-6').innerHTML = out
+  document.querySelector(".out-6").innerHTML = out;
 }
 
 document.querySelector(".b-6").onclick = f6;
@@ -111,7 +111,7 @@ function f7() {
     [21, 34, 43],
     [44, 56],
   ];
-  
+
   for (let i = 0; i < a7.length; i++) {
     for (let k = 0; k < a7[i].length; k++) {
       if (a7[i][k] % 2 == 0) out += a7[i][k] + " ";
@@ -134,15 +134,15 @@ function f8() {
     [21, 34, 43],
     [44, 56],
   ];
-console.log(a8)
-for(let i = 0; i < a8.length; i++){
-    for (let k = 0; k < a8[i].length; k++){
-     if (a8[i][k] % 2 !== 0){
-         out += a8[i][k] + " "; 
-     }
+
+  for (let i = 0; i < a8.length; i++) {
+    for (let k = 0; k < a8[i].length; k++) {
+      if (a8[i][k] % 2 !== 0) {
+        out += a8[i][k] + " ";
+      }
     }
-}
-document.querySelector('.out-8').innerHTML = out
+  }
+  document.querySelector(".out-8").innerHTML = out;
 }
 
 document.querySelector(".b-8").onclick = f8;
@@ -152,6 +152,7 @@ document.querySelector(".b-8").onclick = f8;
 
 function f9() {
   let out = "";
+
   let a9 = [
     [-2, 7, -3],
     [3, 4, -7],
@@ -159,6 +160,14 @@ function f9() {
     [21, -34, -43],
     [44, -56],
   ];
+  for (let i = 0; i < a9.length; i++) {
+    for (let k = 0; k < a9[i].length; k++) {
+      if (a9[i][k] > 0) {
+        out += a9[i][k] + " ";
+      }
+    }
+  }
+  document.querySelector(".out-9").innerHTML = out;
 }
 
 document.querySelector(".b-9").onclick = f9;
