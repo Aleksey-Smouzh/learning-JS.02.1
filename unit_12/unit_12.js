@@ -37,7 +37,8 @@ function f3() {
     [6, [7, "my"]],
   ];
 
-  // return
+  document.querySelector(".out-3").innerHTML = a3[2][1][1];
+  return a3[2][1][1];
 }
 
 document.querySelector(".b-3").onclick = f3;
