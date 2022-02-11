@@ -171,7 +171,18 @@ let a9 = {
   d: 54,
 };
 
-function f9() {}
+function f9() {
+  let i9 = document.querySelector(".i-9").value;
+  let out = " ";
+
+  if (a9[i9] !== undefined) {
+    out += i9 + " : " + a9[i9];
+  } else {
+    out += " я не знаю что это за дичь почему это не работает ";
+  }
+
+  document.querySelector(".out-9").innerHTML = out;
+}
 
 document.querySelector(".b-9").onclick = f9;
 
@@ -179,15 +190,21 @@ document.querySelector(".b-9").onclick = f9;
 // Давайте напишем полезную функцию f10, которая проверяет есть ли значение в ассоциативном массиве. Фукнция должна возвращать true если есть, и false если нет. Массив и значение передавать функции в качестве параметров.
 
 function f10(arr, val) {
-  //return true;
-  //return false;
+
+  for (let key in arr) {
+    if (arr[key] === val) {
+      return true;
+    }
+  }
+
+  return false;
 }
 
 document.querySelector(".b-10").onclick = () => {
   let a10 = {
-    k: 22,
-    d: 54,
-    m: 22,
+     k: 22,
+     d: 54,
+     m: 22,
   };
   document.querySelector(".out-10").innerHTML = f10(a10, 22);
 };
