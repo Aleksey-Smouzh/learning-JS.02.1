@@ -49,7 +49,7 @@ function f3() {
         "odd": "hi",
         "mix": "mix"
     };
-     return a3.five + " ";
+     return a3.five + " " + a3.odd ;
 }
 
 document.querySelector('.b-3').onclick = () => {
@@ -71,8 +71,11 @@ let a4 = {
     "mix": "mix"
 };
 function f4() {
-
-    // return out;
+ let out = "";
+ for(let key in a4){
+    out += key + " " + a4[key] + "<br></br>";
+ }
+    return out
 }
 
 document.querySelector('.b-4').onclick = () => {
