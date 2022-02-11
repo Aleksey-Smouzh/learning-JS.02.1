@@ -190,7 +190,6 @@ document.querySelector(".b-9").onclick = f9;
 // Давайте напишем полезную функцию f10, которая проверяет есть ли значение в ассоциативном массиве. Фукнция должна возвращать true если есть, и false если нет. Массив и значение передавать функции в качестве параметров.
 
 function f10(arr, val) {
-
   for (let key in arr) {
     if (arr[key] === val) {
       return true;
@@ -202,9 +201,9 @@ function f10(arr, val) {
 
 document.querySelector(".b-10").onclick = () => {
   let a10 = {
-     k: 22,
-     d: 54,
-     m: 22,
+    k: 22,
+    d: 54,
+    m: 22,
   };
   document.querySelector(".out-10").innerHTML = f10(a10, 22);
 };
@@ -220,13 +219,10 @@ let a11 = {
   d: 54,
 };
 
-function f11(arr, block) {
-    
-    let key = document.querySelector('.i-11').value
-    delete a11[key];
-    f5(a11, ".out-11");
-    console.log(a11)
-  
+function f11() {
+  let key = document.querySelector(".i-11").value;
+  delete a11[key];
+  f5(a11, ".out-11");
 }
 
 document.querySelector(".b-11").onclick = f11;
@@ -242,7 +238,18 @@ let a12 = {
   d: 17,
 };
 
-function f12() {}
+function f12() {
+  let k = document.querySelector(".i-12").value;
+  console.log(a12);
+  for (let key in a12) {
+    if (a12[key] == k) {
+      delete a12[key];
+    }
+  }
+
+  f5(a12, ".out-12");
+  console.log(a12);
+}
 
 document.querySelector(".b-12").onclick = f12;
 
