@@ -147,7 +147,16 @@ let a8 = {
   e: 22,
 };
 
-function f8() {}
+function f8() {
+  let i8 = document.querySelector(".i-8").value;
+  let out = "";
+  if (a8[i8] !== undefined) {
+    out += i8 + " : " + a8[i8];
+  } else {
+    out += 0;
+  }
+  document.querySelector(".out-8").innerHTML = out;
+}
 
 document.querySelector(".b-8").onclick = f8;
 
