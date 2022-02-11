@@ -220,7 +220,14 @@ let a11 = {
   d: 54,
 };
 
-function f11() {}
+function f11(arr, block) {
+    
+    let key = document.querySelector('.i-11').value
+    delete a11[key];
+    f5(a11, ".out-11");
+    console.log(a11)
+  
+}
 
 document.querySelector(".b-11").onclick = f11;
 
