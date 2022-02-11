@@ -27,7 +27,7 @@ function f2() {
         "five": "hi"
     };
 
-    // return
+    return a2.five
 }
 
 document.querySelector('.b-2').onclick = () => {
@@ -49,7 +49,7 @@ function f3() {
         "odd": "hi",
         "mix": "mix"
     };
-    // return
+     return a3.five + " ";
 }
 
 document.querySelector('.b-3').onclick = () => {
