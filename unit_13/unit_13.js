@@ -288,7 +288,15 @@ let a14 = {
   ivan: [9, 10],
 };
 
-function f14() {}
+function f14() {
+  out = "";
+  console.log(a14);
+  for (let key in a14) {
+    out += a14[key][0];
+  }
+
+  document.querySelector(".out-14").innerHTML = out;
+}
 
 document.querySelector(".b-14").onclick = f14;
 
