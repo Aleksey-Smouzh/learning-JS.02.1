@@ -426,7 +426,19 @@ let a19 = {
   green: ["Syrets", "Zoloti Vorota", "Klovska", "Vidubichi"],
 };
 
-function f19() {}
+function f19() {
+  let out = "";
+  let inp = document.querySelector(".i-19").value.toLowerCase();
+  for (let key in a19) {
+    for (let i = 0; i < a19[key].length; i++) {
+      if (a19[key][i].toLowerCase() == inp) {
+        out += key;
+      }
+    }
+  }
+
+  document.querySelector(".out-19").innerHTML = out;
+}
 
 document.querySelector(".b-19").onclick = f19;
 
