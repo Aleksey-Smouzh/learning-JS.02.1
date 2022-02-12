@@ -344,25 +344,18 @@ let a16 = {
 };
 
 function f16() {
-    
-    let out = " ";
-  for(let key in a16){
-      out += a16[key]['name'] + " "
+  let out = " ";
+  for (let key in a16) {
+    out += a16[key]["name"] + " ";
   }
-    // for(let key in a16){
-    //    for(let ley in a16[key]){
-
-    //     if ( typeof a16[key][ley] == "string"){
-    //         out += ley + " " + a16[key][ley]  + " ";
-    //     }
-       
-        
-    //    }
-        
-        
-       
-    // }
-    document.querySelector('.out-16').innerHTML = out
+  // for(let key in a16){
+  //    for(let ley in a16[key]){
+  //     if ( typeof a16[key][ley] == "string"){
+  //         out += ley + " " + a16[key][ley]  + " ";
+  //     }
+  //    }
+  // }
+  document.querySelector(".out-16").innerHTML = out;
 }
 
 document.querySelector(".b-16").onclick = f16;
@@ -385,7 +378,15 @@ let a17 = {
   },
 };
 
-function f17() {}
+function f17() {
+    let out = "";
+    for(let key in a17){
+        if(a17[key]['age'] > 30){
+            out += a17[key]['age'] + " "
+        }
+    }
+    document.querySelector('.out-17').innerHTML = out
+}
 
 document.querySelector(".b-17").onclick = f17;
 
