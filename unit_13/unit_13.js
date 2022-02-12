@@ -343,7 +343,27 @@ let a16 = {
   },
 };
 
-function f16() {}
+function f16() {
+    
+    let out = " ";
+  for(let key in a16){
+      out += a16[key]['name'] + " "
+  }
+    // for(let key in a16){
+    //    for(let ley in a16[key]){
+
+    //     if ( typeof a16[key][ley] == "string"){
+    //         out += ley + " " + a16[key][ley]  + " ";
+    //     }
+       
+        
+    //    }
+        
+        
+       
+    // }
+    document.querySelector('.out-16').innerHTML = out
+}
 
 document.querySelector(".b-16").onclick = f16;
 
