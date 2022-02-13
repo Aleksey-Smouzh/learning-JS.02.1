@@ -1,6 +1,7 @@
 
 function getWeather() {
 	const cityId = document.querySelector('#city').value;
+    console.log(cityId)
 	fetch(`${param.url}weather?id=${cityId}&units=metric&APPID=${param.appid}`)
 	.then(weather => {
 			return weather.json();
@@ -13,12 +14,16 @@ const param = {
 
 function showWeather(data) {
 	console.log(data);
+    document.querySelector('.out_temperature').innerHTML = Math.round(data.main.temp) + "&deg";
+	document.querySelector('.out_condition').textContent = data.weather[0]['description'];
+	document.querySelector('.out_wind').innerHTML = "wind:" +" "+ data.wind.speed + " " +"m/s"
 }
 getWeather();
 document.querySelector('#city').onchange = getWeather;
 const cities =  {
-    23232 : "London",
-    33456 : "Minsk",
-    87968 : "Gdansk",
-    39849 : "Kyiv",
+	524901 : "Moskow",
+    625144 : "Minsk",
+    3099434 : "Gdansk",
+    703448 : "Kiev",
+	3088171 : "Poznan",
  }
