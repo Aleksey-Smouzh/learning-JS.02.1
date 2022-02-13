@@ -1,0 +1,41 @@
+html, body {
+    font-family: serif;
+    font-size: 25px;
+    font-weight: 400;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    
+}
+.conainer_border{
+    display: flex;
+    align-items: center; 
+    /* justify-content: center; */
+    flex-direction: column;
+    height: 200px;
+    width: 110px;
+    padding: 15px 15px 15px 15px ;
+    border: 2px solid rgb(114, 250, 132);
+    border-radius: 10px;
+    border-width: 5px;
+    background:rgb(255, 255, 255)
+}
+#city{
+margin-top: 8px;
+margin-bottom: 20px;
+font-size: 20px;
+color: rgb(12, 11, 11);
+border: 2px solid rgb(80, 255, 89);
+border-radius: 10px;
+background: #ffff;
+}
+.out_temperature{
+    margin-bottom: 20px;
+}
+
+.out_condition{
+    margin-bottom: 20px;  
+}
