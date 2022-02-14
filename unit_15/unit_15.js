@@ -119,7 +119,14 @@ let s8 = new Set([
 ]);
 let ar8 = [];
 
-const f8 = () => {};
+const f8 = () => {
+  s8.forEach(function (numb) {
+    if (numb > 5) {
+      ar8.push(numb);
+    }
+    console.log(ar8);
+  });
+};
 
 document.querySelector(".b-8").onclick = f8;
 
