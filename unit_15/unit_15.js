@@ -74,7 +74,23 @@ let a6 = [
   3, 4, 1, 1, 4, 2, 2, 4, 5, 24, 5, 3, 22, 56,
 ];
 
-const f6 = () => {};
+const f6 = () => {
+    let out = "";
+    let s6 = new Set(a6);
+    console.log(s6)
+   
+
+    s6.forEach(function(rez) {
+        out += rez + " "        
+    })
+    // for (let n of s6){
+    //     out +=  n
+    // }
+    
+    
+    document.querySelector('.out-6').innerHTML = out
+  
+};
 
 document.querySelector(".b-6").onclick = f6;
 
