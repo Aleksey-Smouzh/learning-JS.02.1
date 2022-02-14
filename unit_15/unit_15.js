@@ -40,7 +40,16 @@ document.querySelector(".b-3").onclick = f3;
 
 let s4 = new Set(["a", "b", "c", "z"]);
 
-const f4 = () => {};
+const f4 = () => {
+  let hs = document.querySelector(".i-4").value;
+  let out = document.querySelector(".out-4");
+  s4.has(hs);
+  if (s4.has(hs) == true) {
+    out.innerHTML = true;
+  } else {
+    out.innerHTML = false;
+  }
+};
 
 document.querySelector(".b-4").onclick = f4;
 
