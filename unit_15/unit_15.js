@@ -135,36 +135,35 @@ document.querySelector(".b-8").onclick = f8;
 // В нашем примере результат должен быть 9 8 7 6 5
 
 const f9 = (our_set) => {
-    let out = " ";
-    for(item of our_set){
-        out += item + " ";
-    }
-    return out
+  let out = " ";
+  for (item of our_set) {
+    out += item + " ";
+  }
+  return out;
 };
 
 document.querySelector(".b-9").onclick = () => {
   let s9 = new Set([9, 8, 7, 6, 5]);
- 
+
   document.querySelector(".out-9").innerHTML = f9(s9);
 };
 
 // Task 10
 // При нажатии b-10 выполняете функцию f10. Функция должна принимать набор set в качестве параметра и выводить его в указанный элемент. Элемент указывается как второй параметр функции f10. Вывод значений - через пробел.
 
-const f10 = (out_set ,elem ) => {
-    let out = '';
-  for(item of out_set){
+const f10 = (out_set, elem) => {
+  let out = "";
+  for (item of out_set) {
     out += item + " ";
-    console.log(item)
+    console.log(item);
   }
-  
-   
-  document.querySelector('.out-10').innerHTML = out
+
+  document.querySelector(".out-10").innerHTML = out;
 };
 
 document.querySelector(".b-10").onclick = () => {
   let a10 = new Set(["4", "5", "6"]);
-  f10( a10, "out-10",);
+  f10(a10, "out-10");
 };
 
 // Task 11
@@ -174,7 +173,7 @@ document.querySelector(".b-10").onclick = () => {
 const f11 = () => {
   let s = new Set();
   s.add([1]);
-  s.add([1, 4, 7 ]);
+  s.add([1, 4, 7]);
   console.log(s);
 };
 
@@ -187,21 +186,13 @@ let str12 =
   "The name conjures up visions of plum pudding and Christmas punch quaint coaching inns and cozy firesides but also of orphaned and starving children";
 
 const f12 = () => {
-  
-  let y = []
-  for (let i = 0; i < str12.length; i++){
-    y.push(str12[i]) 
+  let y = [];
+  for (let i = 0; i < str12.length; i++) {
+    y.push(str12[i]);
   }
-  let s = new Set(y)
-  return s
- 
+  let s = new Set(y);
+  return s;
 };
-
-
-
-
-
-
 
 document.querySelector(".b-12").onclick = () => {
   console.log(f12());
@@ -216,7 +207,19 @@ let str13 =
   "The name conjures up visions of plum pudding and Christmas punch quaint coaching inns and cozy firesides but also of orphaned and starving children";
 
 const f13 = () => {
-  // return
+  let s13 = new Set(str13)
+  let obj = {}
+  for (item of s13){
+   let count = 0;
+    for (let i = 0; i < str13.length; i++){
+      if (str13[i] === item){
+        count++
+      };
+      
+    }
+    obj[item] = count
+  }
+   return obj
 };
 
 document.querySelector(".b-13").onclick = () => {
