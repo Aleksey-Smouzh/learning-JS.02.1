@@ -174,7 +174,7 @@ document.querySelector(".b-10").onclick = () => {
 const f11 = () => {
   let s = new Set();
   s.add([1]);
-  s.add([1]);
+  s.add([1, 4, 7 ]);
   console.log(s);
 };
 
@@ -186,7 +186,22 @@ document.querySelector(".b-11").onclick = f11;
 let str12 =
   "The name conjures up visions of plum pudding and Christmas punch quaint coaching inns and cozy firesides but also of orphaned and starving children";
 
-const f12 = () => {};
+const f12 = () => {
+  
+  let y = []
+  for (let i = 0; i < str12.length; i++){
+    y.push(str12[i]) 
+  }
+  let s = new Set(y)
+  return s
+ 
+};
+
+
+
+
+
+
 
 document.querySelector(".b-12").onclick = () => {
   console.log(f12());
