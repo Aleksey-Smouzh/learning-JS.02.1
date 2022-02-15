@@ -18,7 +18,13 @@ document.querySelector(".b-1").addEventListener("click", f1);
 
 let a2 = [5, 7, 9, 11, 13, 15];
 
-function f2() {}
+function f2() {
+  let out = "";
+  for (let i = 0; i < a2.length; i++) {
+    out += i + " " + a2[i] + " ";
+  }
+  document.querySelector(".out-2").innerHTML = out;
+}
 
 document.querySelector(".b-2").addEventListener("click", f2);
 
