@@ -124,7 +124,7 @@ const f8 = () => {
     if (numb > 5) {
       ar8.push(numb);
     }
-    console.log(ar8);
+    // console.log(ar8);
   });
 };
 
@@ -134,21 +134,37 @@ document.querySelector(".b-8").onclick = f8;
 //  При нажатии b-9 выполняете функцию f9. Функция должна принимать набор our_set в качестве параметра, преобразовывать его в строку, причем после каждого символа строки должен быть пробел. Функция должна возвращать результирующую строку.
 // В нашем примере результат должен быть 9 8 7 6 5
 
-const f9 = (our_set) => {};
+const f9 = (our_set) => {
+    let out = " ";
+    for(item of our_set){
+        out += item + " ";
+    }
+    return out
+};
 
 document.querySelector(".b-9").onclick = () => {
   let s9 = new Set([9, 8, 7, 6, 5]);
+ 
   document.querySelector(".out-9").innerHTML = f9(s9);
 };
 
 // Task 10
 // При нажатии b-10 выполняете функцию f10. Функция должна принимать набор set в качестве параметра и выводить его в указанный элемент. Элемент указывается как второй параметр функции f10. Вывод значений - через пробел.
 
-const f10 = (out_set, elem) => {};
+const f10 = (out_set ,elem ) => {
+    let out = '';
+  for(item of out_set){
+    out += item + " ";
+    console.log(item)
+  }
+  
+   
+  document.querySelector('.out-10').innerHTML = out
+};
 
 document.querySelector(".b-10").onclick = () => {
   let a10 = new Set(["4", "5", "6"]);
-  f10(a10, ".out-10");
+  f10( a10, "out-10",);
 };
 
 // Task 11
