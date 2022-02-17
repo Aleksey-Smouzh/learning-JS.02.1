@@ -44,15 +44,11 @@ document.querySelector(".b-3").addEventListener("click", f3);
 //При нажатии .b-4 выполняете функцию f4. Функция получает div.out-4 со страницы с помощью querySelectorAll и в каждый дописывает число 4.
 
 function f4() {
-    let o = '';
-    let out4 = document.querySelectorAll('.out-4')
-    for(let i = 0; i < out4.length; i++){
-      for(let k = 0; k < out4[i].length; k++){
-        
-      }           
-      
-    }
-    
+  let o = "";
+  let out4 = document.querySelectorAll(".out-4");
+  for (let i = 0; i < out4.length; i++) {
+    for (let k = 0; k < out4[i].length; k++) {}
+  }
 }
 
 document.querySelector(".b-4").addEventListener("click", f4);
@@ -64,19 +60,17 @@ let a5 = [3, 4, 5, 2, 1, 7, 8, 2, 4, 6, 8, 11, 23, 17];
 
 function f5() {
   let out = "";
- let a5a = []
- for(item of a5){
-  if(item > 7){
-   a5a.push(item)
-  //  console.log(a5a)
+  let a5a = [];
+  for (item of a5) {
+    if (item > 7) {
+      a5a.push(item);
+      //  console.log(a5a)
+    }
   }
-
-}
-for (let i = 0; i < a5a.length; i++){
-  out += a5a[i] + " "
-
- }
-document.querySelector('.out-5').innerHTML = out
+  for (let i = 0; i < a5a.length; i++) {
+    out += a5a[i] + " ";
+  }
+  document.querySelector(".out-5").innerHTML = out;
 }
 
 document.querySelector(".b-5").addEventListener("click", f5);
@@ -90,7 +84,20 @@ let a6 = [
   [5, 6],
 ];
 
-function f6() {}
+function f6() {
+  let a6a = [];
+  let out = "";
+  for (let i = 0; i < a6.length; i++) {
+    for (let k = 0; k < a6[i].length; k++) {
+      a6a.push(a6[i][k]);
+    }
+  }
+  for (item of a6a) {
+    out += item + " ";
+  }
+
+  document.querySelector(".out-6").innerHTML = out;
+}
 
 document.querySelector(".b-6").addEventListener("click", f6);
 
