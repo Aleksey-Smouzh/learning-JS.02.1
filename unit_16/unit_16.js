@@ -173,7 +173,14 @@ document.querySelector(".b-9").addEventListener("click", () => {
 
 let a10 = [4, 6, 9, "Hello"];
 
-function f10() {}
+function f10() {
+let a10a = new Map() 
+for(let i = 0; i < a10.length; i++){
+ a10a.set(a10[i], a10[i])
+}
+
+return a10a
+}
 
 document.querySelector(".b-10").addEventListener("click", () => {
   console.log(f10());
