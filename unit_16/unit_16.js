@@ -230,11 +230,11 @@ document.querySelector(".b-12").addEventListener("click", f12);
 let a13 = "testone";
 
 function f13() {
- let out = '';
- for(item of a13){
-   out += item + " "
- }
-document.querySelector('.out-13').innerHTML = out
+  let out = "";
+  for (item of a13) {
+    out += item + " ";
+  }
+  document.querySelector(".out-13").innerHTML = out;
 }
 
 document.querySelector(".b-13").addEventListener("click", f13);
@@ -244,7 +244,13 @@ document.querySelector(".b-13").addEventListener("click", f13);
 
 let a14 = new Set([4, 5, 6]);
 
-function f14() {}
+function f14() {
+  let out = "";
+  for (item of a14) {
+    out += item + " ";
+  }
+  document.querySelector(".out-14").innerHTML = out;
+}
 
 document.querySelector(".b-14").addEventListener("click", f14);
 
