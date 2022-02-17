@@ -174,12 +174,12 @@ document.querySelector(".b-9").addEventListener("click", () => {
 let a10 = [4, 6, 9, "Hello"];
 
 function f10() {
-let a10a = new Map() 
-for(let i = 0; i < a10.length; i++){
- a10a.set(a10[i], a10[i])
-}
+  let a10a = new Map();
+  for (let i = 0; i < a10.length; i++) {
+    a10a.set(a10[i], a10[i]);
+  }
 
-return a10a
+  return a10a;
 }
 
 document.querySelector(".b-10").addEventListener("click", () => {
@@ -196,7 +196,16 @@ let a11 = {
   four: 0,
 };
 
-function f11() {}
+function f11() {
+  let out = "";
+  for (item in a11) {
+    console.log(a11[item]);
+    if (a11[item] > 10) {
+      out += a11[item] + " ";
+    }
+  }
+  document.querySelector(".out-11").innerHTML = out;
+}
 
 document.querySelector(".b-11").addEventListener("click", f11);
 
