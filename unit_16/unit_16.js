@@ -110,14 +110,13 @@ let a7 = [
 ];
 
 function f7() {
- 
-  let a7a = {}
-  for(let i = 0; i < a7.length; i++){
-let id = a7[i]['id'];
-let name = a7[i]['name']
-a7a[id]=name
+  let a7a = {};
+  for (let i = 0; i < a7.length; i++) {
+    let id = a7[i]["id"];
+    let name = a7[i]["name"];
+    a7a[id] = name;
   }
-  return a7a
+  return a7a;
 }
 
 document.querySelector(".b-7").addEventListener("click", () => {
@@ -133,17 +132,13 @@ let a8 = [
 ];
 
 function f8() {
-let a8a = []
-for(let i = 0; i< a8.length; i++){
-  a8a.push(a8[i].id)
-  
+  let a8a = [];
+  for (let i = 0; i < a8.length; i++) {
+    a8a.push(a8[i].id);
+  }
 
-}
-
-
-a8 = a8a 
-return a8
-
+  a8 = a8a;
+  return a8;
 }
 
 document.querySelector(".b-8").addEventListener("click", () => {
@@ -159,7 +154,15 @@ let a9 = [
   [0, 0, 0, 0, 0],
 ];
 
-function f9() {}
+function f9() {
+  let out = "";
+  for (let i = 0; i < a9.length; i++) {
+    if (a9[i].length > 4) {
+      out = a9[i];
+    }
+  }
+  return out;
+}
 
 document.querySelector(".b-9").addEventListener("click", () => {
   document.querySelector(".out-9").innerHTML = f9();
