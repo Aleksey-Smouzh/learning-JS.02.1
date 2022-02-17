@@ -109,7 +109,16 @@ let a7 = [
   { id: 45, name: "Petr" },
 ];
 
-function f7() {}
+function f7() {
+ 
+  let a7a = {}
+  for(let i = 0; i < a7.length; i++){
+let id = a7[i]['id'];
+let name = a7[i]['name']
+a7a[id]=name
+  }
+  return a7a
+}
 
 document.querySelector(".b-7").addEventListener("click", () => {
   console.log(f7());
