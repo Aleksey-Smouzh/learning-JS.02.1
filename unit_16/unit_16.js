@@ -132,7 +132,19 @@ let a8 = [
   { id: 45, name: "Petr" },
 ];
 
-function f8() {}
+function f8() {
+let a8a = []
+for(let i = 0; i< a8.length; i++){
+  a8a.push(a8[i].id)
+  
+
+}
+
+
+a8 = a8a 
+return a8
+
+}
 
 document.querySelector(".b-8").addEventListener("click", () => {
   console.log(f8());
