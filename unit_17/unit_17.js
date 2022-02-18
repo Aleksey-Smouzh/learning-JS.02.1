@@ -95,7 +95,13 @@ document.querySelector('.b-4').onclick = () => {
 let a5 = [3, 14, 15, 92, '6'];
 
 function t5() {
-   
+  a5_res = a5.filter(function(elem){
+      if(elem % 2 == 0 && typeof elem === "number"){
+          return true
+
+      }
+  })
+  return a5_res 
 }
 
 document.querySelector('.b-5').onclick = () => {
