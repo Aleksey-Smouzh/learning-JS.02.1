@@ -126,7 +126,12 @@ let a7 = [
   "Assassin`s Creed Chronicles",
 ];
 
-function t7() {}
+function t7() {
+  a7_res = a7.map((elem) => {
+    return elem.toLowerCase();
+  });
+  return a7_res;
+}
 
 document.querySelector(".b-7").onclick = () => {
   console.log(t7());
