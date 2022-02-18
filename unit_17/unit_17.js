@@ -19,10 +19,14 @@ let a1_res = [],
 let a1 = [4, 5, 6, 7, 12, 34, 56, 78, 90, 11];
 
 function t1() {
+  
     a1_res = a1.map(elem => {
         return elem * 2;
+       
     });
+    // console.log(a1_res)
     return a1_res;
+    
 }
 
 document.querySelector('.b-1').onclick = () => {
