@@ -166,7 +166,16 @@ let a9 = [
   "Far Cry Primal",
 ];
 
-function t9() {}
+function t9() {
+  let t = [];
+  a9.forEach((elem) => {
+    t.push(elem.toLowerCase());
+  });
+
+  a9 = t;
+
+  return a9;
+}
 
 document.querySelector(".b-9").onclick = () => {
   console.log(t9());
