@@ -74,6 +74,12 @@ document.querySelector('.b-3').onclick = () => {
 let a4 = [4, "3", 6, 7, "12", 34, "56", 78, 90, 11];
 
 function t4() {
+    a4_res = a4.filter(function(elem){
+        if(typeof elem === 'number'){
+          return true;
+        }
+    })
+ return a4_res
 
 }
 
@@ -89,7 +95,7 @@ document.querySelector('.b-4').onclick = () => {
 let a5 = [3, 14, 15, 92, '6'];
 
 function t5() {
-
+   
 }
 
 document.querySelector('.b-5').onclick = () => {
