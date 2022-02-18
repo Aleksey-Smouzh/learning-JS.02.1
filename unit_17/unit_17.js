@@ -142,7 +142,15 @@ document.querySelector(".b-7").onclick = () => {
 
 let a8 = [3, 14, 15, 92, 7, 32, 59];
 
-function t8() {}
+function t8() {
+  for (let i = 0; i < a8.length; i++) {
+    if (i % 2 !== 0) {
+      a8_res.push(i);
+    }
+  }
+
+  return a8_res;
+}
 
 document.querySelector(".b-8").onclick = () => {
   console.log(t8());
