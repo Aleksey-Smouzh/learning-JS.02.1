@@ -57,7 +57,10 @@ document.querySelector('.b-2').onclick = () => {
 let a3 = [4, "3", 6, 7, "12", 34, "56", 78, 90, 11];
 
 function t3() {
-
+a3_res = a3.map(function(item){
+    return +item
+})
+return a3_res
 }
 
 document.querySelector('.b-3').onclick = () => {
