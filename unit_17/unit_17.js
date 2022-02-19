@@ -190,7 +190,7 @@ function t10() {
   let t = [];
   a10.forEach((elem) => {
     if (elem < 0) {
-      elem = 0;
+      a10 = 0;
     }
 
     console.log(a10);
@@ -207,7 +207,15 @@ document.querySelector(".b-10").onclick = () => {
 
 let a11 = [2, 13, 14, -7, 9, 5, 0, -2, 14];
 
-function t11() {}
+function t11() {
+    a11_res = a11.filter(function(index){
+        if(index % 2 == 0){
+             return a11_res
+        }
+
+    })
+    return a11_res
+}
 
 document.querySelector(".b-11").onclick = () => {
   console.log(t11());
