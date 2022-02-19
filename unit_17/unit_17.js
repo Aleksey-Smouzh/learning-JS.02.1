@@ -208,13 +208,12 @@ document.querySelector(".b-10").onclick = () => {
 let a11 = [2, 13, 14, -7, 9, 5, 0, -2, 14];
 
 function t11() {
-    a11_res = a11.filter(function(index){
-        if(index % 2 == 0){
-             return a11_res
-        }
-
-    })
-    return a11_res
+  a11_res = a11.filter(function (index) {
+    if (index % 2 == 0) {
+      return a11_res;
+    }
+  });
+  return a11_res;
 }
 
 document.querySelector(".b-11").onclick = () => {
@@ -225,14 +224,13 @@ document.querySelector(".b-11").onclick = () => {
 /*  Данa переменная a12 = [2, 13, 14, -7, 9, 5, 0, -2, 14]. С помощью метода Array.isArray определите является ли переменная a12 массивом. Если да - то функция возврaщает true, если нет false.*/
 
 let a12 = [2, 13, 14, -7, 9, 5, 0, -2, 14];
-   a12 = 8; // на этой переменной можно проверить работает или нет ваша функция.
+a12 = 8; // на этой переменной можно проверить работает или нет ваша функция.
 
 function t12() {
-console.log(Array.isArray(a12))
+  // console.log(Array.isArray(a12))
 
-return a12
+  return Array.isArray(a12);
 }
-
 
 document.querySelector(".b-12").onclick = () => {
   console.log(t12());
@@ -244,7 +242,9 @@ document.querySelector(".b-12").onclick = () => {
 let a13 = [2, 13, 14, -7, 9, 5, 0, -2, 14];
 let a13_num = 9;
 
-function t13() {}
+function t13() {
+  return a13.includes(a13_num);
+}
 
 document.querySelector(".b-13").onclick = () => {
   console.log(t13());
