@@ -256,7 +256,17 @@ document.querySelector(".b-13").onclick = () => {
 let a14 = ["c", "C", "d", "e", "E"];
 let a14_sym = "e";
 
-function t14() {}
+function t14() {
+  let z = "";
+  for (let i = 0; i < a14.length; i++) {
+    z += a14[i];
+    //    console.log(z)
+  }
+  if (z.toLowerCase()) {
+    return z.includes(a14_sym);
+  }
+  console.log(z);
+}
 
 document.querySelector(".b-14").onclick = () => {
   console.log(t14());
@@ -297,7 +307,12 @@ let a15 = [
   },
 ];
 
-function t15() {}
+function t15() {
+  a15_res = a15.filter(function (item) {
+    return item.pnum;
+  });
+  return a15_res;
+}
 
 document.querySelector(".b-15").onclick = () => {
   console.log(t15());
