@@ -3,17 +3,23 @@
 /* Добавьте на блок .div-1 событие клик и по клику запуск функции t1. Функция должна возвращать и выводить на экран содержимое блока (только текст). Вывод осуществляется в out-1.  */
 
 function t1(e) {
-    return document.querySelector('.out-1').innerHTML = e.target.innerHTML
-} 
-document.querySelector('.div-1').onclick =t1
+    return document.querySelector('.out-1').textContent = e.target.textContent;
+}  
+document.querySelector('.div-1').onclick = t1;
 // ваше событие здесь!!!
 
 // Task 2 ============================================
 /*  Добавьте на блок .div-2 событие клик и по клику запуск функции t2. Функция должна возвращать true или false в зависимости от того, нажата ли клавиша alt или нет в момент клика. Также, выводите на экран результат. Вывод осуществляется в out-2. */
 
-function t2() {
-
+function t2(e) {
+//    return document.querySelector('.out-2').innerHTML = e
+return e.altKey ? true : false;
+} 
+document.querySelector('.div-2').onclick = (e) => {
+    document.querySelector('.out-2').textContent = t2(e)
 }
+
+
 
 // ваше событие здесь!!!
 
@@ -24,6 +30,7 @@ function t2() {
 let w3 = 75;
 
 function t3() {
+    
 
 }
 
