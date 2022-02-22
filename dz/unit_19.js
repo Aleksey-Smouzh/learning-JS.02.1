@@ -2,9 +2,10 @@
 // Task 1 ============================================
 /* Добавьте на блок .div-1 событие клик и по клику запуск функции t1. Функция должна возвращать и выводить на экран содержимое блока (только текст). Вывод осуществляется в out-1.  */
 
-function t1() {
-}
-
+function t1(e) {
+    return document.querySelector('.out-1').innerHTML = e.target.innerHTML
+} 
+document.querySelector('.div-1').onclick =t1
 // ваше событие здесь!!!
 
 // Task 2 ============================================
@@ -133,7 +134,7 @@ function t11() {
 function t14() {
 
 }
-document.querySelector('t-14').onclick = t14;
+document.querySelector('.out-14').onclick = t14;
 
 
 // Task 15 ============================================
