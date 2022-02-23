@@ -148,16 +148,21 @@ document.querySelector(".div-13").onmouseup = (e) => {
 /*  Дан блок .div-14. При нажатии кнопки b-14 добавляйте к нему событие onclick - которое, при клике добавляем блоку div-14 класс active. */
 
 function t14() {
-  let div = document.querySelector(".div-14").classList.add("active");
+ document.querySelector(".div-14").classList.add("active");
 }
-document.querySelector(".out-14").onclick = t14;
+document.querySelector(".b-14").onclick = t14;
 
 // Task 15 ============================================
 /*  Дан блок .div-15. Добавьте на него событие move. При каждом движении мыши увеличивайте число внутри на 1. */
+let num = 1
+function t15(e) {
+num++;
+return e.target.innerHTML = num
 
-function t15() {}
+
+}
 // ваше событие здесь!!!
-
+document.querySelector('.div-15').onmousemove = t15
 // Task 16 ============================================
 /*  Дан блок .div-16. Добавьте на него событие move. При каждом движении мыши увеличивайте ширину блока на 1px. */
 
