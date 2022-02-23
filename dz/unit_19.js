@@ -47,9 +47,9 @@ document.querySelector(".div-4").ondblclick = t4;
 /*  Дан блок .div-5.active. Добавьте на него событие двойной клик, по которому удалется класс active если он есть и добавляется если такого класса нет. */
 
 function t5(e) {
-    return (e.target.classList.toggle('active'));
+  return e.target.classList.toggle("active");
 }
-document.querySelector('.div-5').ondblclick = t5;
+document.querySelector(".div-5").ondblclick = t5;
 
 // ваше событие здесь!!!
 
@@ -57,28 +57,38 @@ document.querySelector('.div-5').ondblclick = t5;
 /*  Дан блок .div-6 и список .ul-6. При двойном клике на блоке скрывайте .ul-6 еcли он показан и показывайте если скрыт. Скрытие и показ делайте через добавление - удаление класса .hide */
 
 function t6() {
-let ul = document.querySelector('.ul-6')
+  let ul = document.querySelector(".ul-6");
 
-return (ul.classList.toggle('hide'))
+  return ul.classList.toggle("hide");
 }
 
 // ваше событие здесь!!!
-document.querySelector('.div-6').ondblclick = t6
+document.querySelector(".div-6").ondblclick = t6;
 // Task 7 ============================================
 /*  Дан блок .div-7. При клике правой кнопкой мыши на блоке добавляйте ему класс .active. При повторном клике - удаляйте. */
 
 function t7(e) {
- return (e.target.classList.toggle('active'));
-
+  return e.target.classList.toggle("active");
 }
-document.querySelector('.div-7').oncontextmenu = t7
+document.querySelector(".div-7").oncontextmenu = t7;
 // ваше событие здесь!!!
 
 // Task 8 ============================================
 /*  Дано checkbox .ch-8. Повесьте на него событие onchange при котором на документе отключается клик правой кнопкой мыши если checkbox выбран и отключает если не выбран. */
 
-function t8() {}
-
+function t8() {
+  let ch = document.querySelector(".ch-8");
+  if (ch.checked) {
+    document.oncontextmenu = () => {
+      return false;
+    };
+  } else {
+    document.oncontextmenu = () => {
+      return true;
+    };
+  }
+}
+document.querySelector(".ch-8").onchange = t8;
 // ваше событие здесь!!!
 
 // Task 9 ============================================
