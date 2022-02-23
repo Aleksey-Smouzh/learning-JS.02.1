@@ -189,9 +189,11 @@ document.querySelector('.b-17_off').onclick = t17Off;
 // Task 18 ============================================
 /*  Дан блок div-18. Напишите фукнцию t18 которая выводит в данный блок его ширину при событии onmouseenter. */
 
-function t18() {}
+function t18(e) {
+    return e.target.textContent = e.target.offsetWidth;
+}
 // ваше событие здесь!!!
-
+document.querySelector('.div-18').onmouseenter = t18
 // Task 19 ============================================
 /*  Дан блок div-19. Напишите фукнцию t19 которая выводит в данный блок его классы при событии onmouseout. */
 
