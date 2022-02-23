@@ -167,17 +167,25 @@ let w4 = 75;
 function t16(e) {
   e.target.style.width = `${w4}px`;
   w4 += 1;
+  
 }
 // ваше событие здесь!!!
 document.querySelector(".div-16").onmousemove = t16;
 // Task 17 ============================================
 /*  Дано две кнопки - b-17_on и b-17_off. Напишите фукнции t17On и t17Off которые включают и отключают событие move в задании 16. */
 
-function t17On() {}
-function t17Off() {}
+function t17On() {
+    document.querySelector(".div-16").onmousemove = t16;  
+}
+function t17Off() {
+    document.querySelector(".div-16").onmousemove = function () {
+        return false
+    };
+}
 // ваше событие здесь!!!
 // ваше событие здесь!!!
-
+document.querySelector('.b-17_on').onclick = t17On;
+document.querySelector('.b-17_off').onclick = t17Off;
 // Task 18 ============================================
 /*  Дан блок div-18. Напишите фукнцию t18 которая выводит в данный блок его ширину при событии onmouseenter. */
 
