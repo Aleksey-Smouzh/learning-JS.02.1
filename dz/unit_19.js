@@ -148,27 +148,28 @@ document.querySelector(".div-13").onmouseup = (e) => {
 /*  Дан блок .div-14. При нажатии кнопки b-14 добавляйте к нему событие onclick - которое, при клике добавляем блоку div-14 класс active. */
 
 function t14() {
- document.querySelector(".div-14").classList.add("active");
+  document.querySelector(".div-14").classList.add("active");
 }
 document.querySelector(".b-14").onclick = t14;
 
 // Task 15 ============================================
 /*  Дан блок .div-15. Добавьте на него событие move. При каждом движении мыши увеличивайте число внутри на 1. */
-let num = 1
+let num = 1;
 function t15(e) {
-num++;
-return e.target.innerHTML = num
-
-
+  num++;
+  return (e.target.innerHTML = num);
 }
 // ваше событие здесь!!!
-document.querySelector('.div-15').onmousemove = t15
+document.querySelector(".div-15").onmousemove = t15;
 // Task 16 ============================================
 /*  Дан блок .div-16. Добавьте на него событие move. При каждом движении мыши увеличивайте ширину блока на 1px. */
-
-function t16() {}
+let w4 = 75;
+function t16(e) {
+  e.target.style.width = `${w4}px`;
+  w4 += 1;
+}
 // ваше событие здесь!!!
-
+document.querySelector(".div-16").onmousemove = t16;
 // Task 17 ============================================
 /*  Дано две кнопки - b-17_on и b-17_off. Напишите фукнции t17On и t17Off которые включают и отключают событие move в задании 16. */
 
