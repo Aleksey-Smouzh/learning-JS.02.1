@@ -2,7 +2,7 @@
 /* Добавьте на блок .div-1 событие клик и по клику запуск функции t1. Функция должна возвращать и выводить на экран содержимое блока (только текст). Вывод осуществляется в out-1.  */
 
 function t1(e) {
-  return (document.querySelector(".out-1").textContent = e.target.textContent);
+  return document.querySelector(".out-1").textContent = e.target.textContent;
 }
 document.querySelector(".div-1").onclick = t1;
 // ваше событие здесь!!!
@@ -36,8 +36,12 @@ document.querySelector(".div-3").onclick = t3;
 // Task 4 ============================================
 /*  Добавьте на блок .div-4 событие двойной клик и по двойному клику запуск функции t4. Функция должна возвращать и выводить на экран содержимое блока (только текст). Вывод осуществляется в out-4. */
 
-function t4() {}
+function t4(e) {
+ return document.querySelector('.out-4').textContent =e.target.textContent;
+ 
+}
 
+document.querySelector('.div-4').ondblclick = t4
 // ваше событие здесь!!!
 
 // Task 5 ============================================
